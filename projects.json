@@ -7,13 +7,46 @@
     "githubRepo": "Phoenixn82/atlas",
     "liveUrl": null,
     "status": "active",
-    "stack": ["nextjs", "tailwind"],
+    "stack": [
+      "nextjs",
+      "tailwind"
+    ],
     "type": "web-app",
-    "lastCommit": null,
-    "recentCommits": [],
+    "lastCommit": {
+      "message": "style: vertical logo in hero, remove circle badge from hero",
+      "date": "2026-04-13T03:01:41Z",
+      "sha": "5fc4b5a958580febea683cf699be71b2cc879dfc"
+    },
+    "recentCommits": [
+      {
+        "message": "style: vertical logo in hero, remove circle badge from hero",
+        "date": "2026-04-13T03:01:41Z",
+        "sha": "5fc4b5a958580febea683cf699be71b2cc879dfc"
+      },
+      {
+        "message": "refactor: exactly 2 placements per logo, one per section",
+        "date": "2026-04-13T02:54:06Z",
+        "sha": "eb0813210b1fe1bac3c7985d95f427637d015b25"
+      },
+      {
+        "message": "style: remove circle logo from header, keep boxed logo only",
+        "date": "2026-04-13T02:49:01Z",
+        "sha": "92a40d15d0a426ab5a724a41ec14e4d730ae2c19"
+      },
+      {
+        "message": "feat: replace SVG AtlasMark with circle logo, sharper + more visible logos",
+        "date": "2026-04-13T02:48:07Z",
+        "sha": "db1930ccb80c43cf94de58a8df50f6be939936e0"
+      },
+      {
+        "message": "feat: place all 8 ATLAS logo variants across the site",
+        "date": "2026-04-13T02:41:08Z",
+        "sha": "9d944d95dd9a25c7326c89137d6367cd244f9f9f"
+      }
+    ],
     "openIssues": 0,
-    "repoDescription": "",
-    "updatedAt": ""
+    "repoDescription": "ATLAS — Web Design & SEO Agency Website",
+    "updatedAt": "2026-04-23T23:07:20.297Z"
   },
   {
     "id": "claude-usage-widget",
@@ -23,13 +56,46 @@
     "githubRepo": "SlavomirDurej/claude-usage-widget",
     "liveUrl": null,
     "status": "active",
-    "stack": ["electron", "javascript"],
+    "stack": [
+      "electron",
+      "javascript"
+    ],
     "type": "desktop-app",
-    "lastCommit": null,
-    "recentCommits": [],
-    "openIssues": 0,
-    "repoDescription": "",
-    "updatedAt": ""
+    "lastCommit": {
+      "message": "chore: ignore .claude/ folder (Claude Code config)",
+      "date": "2026-04-17T02:31:51Z",
+      "sha": "b1ac34896a189d4c6f79e03510eff182a649089e"
+    },
+    "recentCommits": [
+      {
+        "message": "chore: ignore .claude/ folder (Claude Code config)",
+        "date": "2026-04-17T02:31:51Z",
+        "sha": "b1ac34896a189d4c6f79e03510eff182a649089e"
+      },
+      {
+        "message": "docs: rename .env.example to MACOS_CODE_SIGNING.md",
+        "date": "2026-04-17T02:25:15Z",
+        "sha": "72a285f52c6452d2e66d6b430d9842cbac51fa3a"
+      },
+      {
+        "message": "docs: split quickstart into user guide and contributor guide",
+        "date": "2026-04-17T02:17:08Z",
+        "sha": "b06d8843ffbd3131fe46a789ad056b1f54f453a9"
+      },
+      {
+        "message": "docs: expand INSTALL.md to cover all platforms",
+        "date": "2026-04-17T02:12:45Z",
+        "sha": "25a3ca873302a9450e0ff74a1ec45794cfc19d45"
+      },
+      {
+        "message": "chore: cleanup release artifacts and update roadmap",
+        "date": "2026-04-17T02:00:19Z",
+        "sha": "fe7700edaf5f89a6538b0c13f664f8af7454dcaf"
+      }
+    ],
+    "openIssues": 2,
+    "repoDescription": "Claude usage widget for Windows",
+    "updatedAt": "2026-04-23T23:07:20.303Z"
   },
   {
     "id": "facebook-car-scraper",
@@ -39,7 +105,10 @@
     "githubRepo": "Phoenixn82/facebook-car-scraper",
     "liveUrl": null,
     "status": "active",
-    "stack": ["python", "docker"],
+    "stack": [
+      "python",
+      "docker"
+    ],
     "type": "desktop-app",
     "lastCommit": null,
     "recentCommits": [],
@@ -55,7 +124,10 @@
     "githubRepo": "Phoenixn82/HometownHybrids",
     "liveUrl": null,
     "status": "active",
-    "stack": ["nextjs", "tailwind"],
+    "stack": [
+      "nextjs",
+      "tailwind"
+    ],
     "type": "web-app",
     "lastCommit": null,
     "recentCommits": [],
@@ -71,7 +143,11 @@
     "githubRepo": "Phoenixn82/job-findr",
     "liveUrl": null,
     "status": "active",
-    "stack": ["nextjs", "supabase", "python"],
+    "stack": [
+      "nextjs",
+      "supabase",
+      "python"
+    ],
     "type": "web-app",
     "lastCommit": null,
     "recentCommits": [],
