@@ -23,4 +23,5 @@ export interface Project {
   openIssues: number;
   repoDescription: string;
   updatedAt: string;
+  launchCommand: string | null;
 }

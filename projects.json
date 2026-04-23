@@ -46,7 +46,8 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-04-23T23:18:18.617Z"
+    "updatedAt": "2026-04-23T23:18:18.617Z",
+    "launchCommand": "npm run dev"
   },
   {
     "id": "claude-usage-widget",
@@ -95,7 +96,8 @@
     ],
     "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-04-23T23:18:18.589Z"
+    "updatedAt": "2026-04-23T23:18:18.589Z",
+    "launchCommand": "npm start"
   },
   {
     "id": "facebook-car-scraper",
@@ -114,7 +116,8 @@
     "recentCommits": [],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": ""
+    "updatedAt": "",
+    "launchCommand": "start.bat"
   },
   {
     "id": "hometown-hybrids",
@@ -133,7 +136,8 @@
     "recentCommits": [],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": ""
+    "updatedAt": "",
+    "launchCommand": "npm run dev"
   },
   {
     "id": "job-findr",
@@ -153,6 +157,7 @@
     "recentCommits": [],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": ""
+    "updatedAt": "",
+    "launchCommand": "docker-compose up"
   }
 ]

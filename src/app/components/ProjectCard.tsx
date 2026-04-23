@@ -28,6 +28,31 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const [expanded, setExpanded] = useState(false);
+  const [launching, setLaunching] = useState(false);
+  const [launchStatus, setLaunchStatus] = useState<string | null>(null);
+
+  async function handleLaunch(e: React.MouseEvent) {
+    e.stopPropagation();
+    setLaunching(true);
+    setLaunchStatus(null);
+    try {
+      const res = await fetch("/api/launch", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: project.id,
+          localPath: project.localPath,
+          launchCommand: project.launchCommand,
+        }),
+      });
+      const data = await res.json();
+      setLaunchStatus(res.ok ? "Running" : data.error);
+    } catch {
+      setLaunchStatus("Failed to connect");
+    } finally {
+      setLaunching(false);
+    }
+  }
 
   return (
     <div
@@ -126,7 +151,16 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
           )}
 
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3 items-center">
+            {project.launchCommand && (
+              <button
+                onClick={handleLaunch}
+                disabled={launching}
+                className="px-4 py-2 bg-emerald-600 text-white rounded-lg text-sm font-medium hover:bg-emerald-500 transition-colors disabled:opacity-50"
+              >
+                {launching ? "Launching..." : "Launch"}
+              </button>
+            )}
             {project.githubRepo && (
               <a
                 href={`https://github.com/${project.githubRepo}`}
@@ -146,6 +180,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
               >
                 Visit Site
               </a>
+            )}
+            {launchStatus && (
+              <span className={`text-xs font-medium ${launchStatus === "Running" ? "text-emerald-500" : "text-red-500"}`}>
+                {launchStatus}
+              </span>
             )}
           </div>
         </div>
