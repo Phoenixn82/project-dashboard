@@ -5,6 +5,7 @@ import { Sidebar } from "./components/Sidebar";
 import { ProjectGrid } from "./components/ProjectGrid";
 import {
   filterProjects,
+  sortByRecentActivity,
   getFilterOptions,
   type Filters,
 } from "@/lib/projects";
@@ -25,7 +26,7 @@ export default function Home() {
   };
 
   const filteredProjects = useMemo(
-    () => filterProjects(projects, activeFilters),
+    () => sortByRecentActivity(filterProjects(projects, activeFilters)),
     [projects, activeFilters]
   );
 

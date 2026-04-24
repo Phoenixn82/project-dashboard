@@ -7,9 +7,9 @@ let nextProcess;
 
 function startNextServer() {
   const projectRoot = path.resolve(__dirname, "..");
-  nextProcess = spawn("npm", ["run", "dev"], {
+  const npmCmd = process.platform === "win32" ? "npm.cmd" : "npm";
+  nextProcess = spawn(npmCmd, ["run", "dev"], {
     cwd: projectRoot,
-    shell: true,
     stdio: "pipe",
   });
 

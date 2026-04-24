@@ -2,11 +2,19 @@
 
 import { useState } from "react";
 import type { Project } from "@/lib/types";
+import { getFreshness, type Freshness } from "@/lib/projects";
 
 const statusColors: Record<string, string> = {
   active: "bg-emerald-500/20 text-emerald-400",
   paused: "bg-amber-500/20 text-amber-400",
   idea: "bg-gray-500/20 text-gray-400",
+};
+
+const freshnessConfig: Record<Freshness, { dot: string; label: string }> = {
+  fresh: { dot: "bg-emerald-400", label: "Active this week" },
+  recent: { dot: "bg-amber-400", label: "Active this month" },
+  stale: { dot: "bg-red-400", label: "Stale (30+ days)" },
+  unknown: { dot: "bg-gray-400", label: "No commit data" },
 };
 
 function timeAgo(dateStr: string): string {
@@ -30,6 +38,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const [expanded, setExpanded] = useState(false);
   const [launching, setLaunching] = useState(false);
   const [launchStatus, setLaunchStatus] = useState<string | null>(null);
+
+  const freshness = getFreshness(project);
+  const { dot, label } = freshnessConfig[freshness];
 
   async function handleLaunch(e: React.MouseEvent) {
     e.stopPropagation();
@@ -64,10 +75,27 @@ export function ProjectCard({ project }: ProjectCardProps) {
         onClick={() => setExpanded(!expanded)}
       >
         <div className="flex items-start justify-between mb-3">
-          <h3 className="font-semibold text-gray-900 text-lg">
-            {project.name}
-          </h3>
           <div className="flex items-center gap-2">
+            <span className={`w-2 h-2 rounded-full ${dot} shrink-0`} title={label} />
+            <h3 className="font-semibold text-gray-900 text-lg">
+              {project.name}
+            </h3>
+          </div>
+          <div className="flex items-center gap-2">
+            {project.openIssues > 0 && (
+              <a
+                href={`https://github.com/${project.githubRepo}/issues`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="flex items-center gap-1 px-2 py-0.5 bg-orange-50 text-orange-600 rounded-full text-xs font-medium hover:bg-orange-100 transition-colors"
+              >
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                {project.openIssues}
+              </a>
+            )}
             <span
               className={`px-2.5 py-0.5 rounded-full text-xs font-medium ${statusColors[project.status] ?? statusColors.idea}`}
             >

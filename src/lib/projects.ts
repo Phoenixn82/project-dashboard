@@ -47,6 +47,29 @@ export function filterProjects(
   });
 }
 
+export function sortByRecentActivity(projects: Project[]): Project[] {
+  return [...projects].sort((a, b) => {
+    const dateA = a.lastCommit?.date ?? "";
+    const dateB = b.lastCommit?.date ?? "";
+    if (!dateA && !dateB) return 0;
+    if (!dateA) return 1;
+    if (!dateB) return -1;
+    return new Date(dateB).getTime() - new Date(dateA).getTime();
+  });
+}
+
+export type Freshness = "fresh" | "recent" | "stale" | "unknown";
+
+export function getFreshness(project: Project): Freshness {
+  if (!project.lastCommit?.date) return "unknown";
+  const days = Math.floor(
+    (Date.now() - new Date(project.lastCommit.date).getTime()) / 86_400_000
+  );
+  if (days <= 7) return "fresh";
+  if (days <= 30) return "recent";
+  return "stale";
+}
+
 export function getFilterOptions(projects: Project[]): FilterOptions {
   const statuses = [...new Set(projects.map((p) => p.status))].sort();
   const stacks = [...new Set(projects.flatMap((p) => p.stack))].sort();
