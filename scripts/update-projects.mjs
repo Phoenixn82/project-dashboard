@@ -28,7 +28,9 @@ if (GITHUB_TOKEN) {
 async function fetchJSON(url) {
   const res = await fetch(url, { headers });
   if (!res.ok) {
-    throw new Error(`${res.status} ${res.statusText} for ${url}`);
+    const error = new Error(`HTTP ${res.status} ${res.statusText} — ${url}`);
+    error.status = res.status;
+    throw error;
   }
   return res.json();
 }
@@ -54,19 +56,43 @@ async function updateProject(project) {
     }));
 
     console.log(
-      `  [ok] ${project.id} — ${recentCommits.length} commits fetched`
+      `  [ok] ${project.id} — ${recentCommits.length} commits fetched (${repo.private ? "private" : "public"})`
     );
 
     return {
       ...project,
       repoDescription: repo.description || "",
+      visibility: repo.private ? "private" : "public",
       openIssues: repo.open_issues_count ?? 0,
       lastCommit: recentCommits[0] || null,
       recentCommits,
       updatedAt: new Date().toISOString(),
+      fetchError: null,
     };
   } catch (err) {
-    console.warn(`  [warn] ${project.id} — ${err.message}`);
+    const status = err.status || "unknown";
+
+    if (err.status === 404) {
+      console.warn(
+        `  [404] ${project.id} — repo "${project.githubRepo}" not found (does not exist or token lacks access)`
+      );
+      return {
+        ...project,
+        lastCommit: null,
+        recentCommits: [],
+        fetchError: `404 — repo not found or private without token access (${new Date().toISOString()})`,
+      };
+    }
+
+    if (err.status === 403) {
+      console.warn(
+        `  [403] ${project.id} — access denied (rate-limited or forbidden): ${err.message}`
+      );
+    } else {
+      console.warn(
+        `  [err] ${project.id} — HTTP ${status}: ${err.message}`
+      );
+    }
     return project;
   }
 }

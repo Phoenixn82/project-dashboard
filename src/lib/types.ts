@@ -24,4 +24,6 @@ export interface Project {
   repoDescription: string;
   updatedAt: string;
   launchCommand: string | null;
+  visibility?: "public" | "private";
+  fetchError?: string | null;
 }
