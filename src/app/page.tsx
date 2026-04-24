@@ -31,7 +31,7 @@ export default function Home() {
   );
 
   function handleFilterChange(
-    category: "status" | "stack" | "type",
+    category: "status" | "stack" | "type" | "freshness",
     value: string
   ) {
     setFilters((prev) => {

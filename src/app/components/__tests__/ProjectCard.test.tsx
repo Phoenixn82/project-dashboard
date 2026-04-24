@@ -32,6 +32,7 @@ const mockProject: Project = {
   openIssues: 2,
   repoDescription: "Atlas app",
   updatedAt: "2026-04-23T07:00:00Z",
+  launchCommand: "npm run dev",
 };
 
 describe("ProjectCard", () => {

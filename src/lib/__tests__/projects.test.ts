@@ -1,4 +1,4 @@
-import { loadProjects, filterProjects, getFilterOptions } from "../projects";
+import { filterProjects, getFilterOptions, sortByRecentActivity, getFreshness } from "../projects";
 import type { Project } from "../types";
 
 const mockProjects: Project[] = [
@@ -17,6 +17,7 @@ const mockProjects: Project[] = [
     openIssues: 0,
     repoDescription: "",
     updatedAt: "",
+    launchCommand: null,
   },
   {
     id: "facebook-car-scraper",
@@ -33,6 +34,7 @@ const mockProjects: Project[] = [
     openIssues: 0,
     repoDescription: "",
     updatedAt: "",
+    launchCommand: null,
   },
 ];
 
@@ -73,6 +75,16 @@ describe("filterProjects", () => {
     expect(result).toHaveLength(1);
     expect(result[0].id).toBe("facebook-car-scraper");
   });
+
+  it("filters by freshness", () => {
+    const withDates: Project[] = [
+      { ...mockProjects[0], lastCommit: { message: "x", date: new Date().toISOString(), sha: "a" } },
+      { ...mockProjects[1] }, // null lastCommit → "unknown"
+    ];
+    const result = filterProjects(withDates, { freshness: ["fresh"] });
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe("atlas");
+  });
 });
 
 describe("getFilterOptions", () => {
@@ -93,5 +105,55 @@ describe("getFilterOptions", () => {
     expect(options.types).toEqual(
       expect.arrayContaining(["web-app", "desktop-app"])
     );
+  });
+
+  it("extracts freshness values present in projects", () => {
+    const options = getFilterOptions(mockProjects);
+    expect(options.freshnesses).toContain("unknown");
+  });
+});
+
+describe("sortByRecentActivity", () => {
+  it("sorts projects with most recent commits first", () => {
+    const projects: Project[] = [
+      { ...mockProjects[0], lastCommit: { message: "old", date: "2026-01-01T00:00:00Z", sha: "a" } },
+      { ...mockProjects[1], lastCommit: { message: "new", date: "2026-04-01T00:00:00Z", sha: "b" } },
+    ];
+    const sorted = sortByRecentActivity(projects);
+    expect(sorted[0].id).toBe("facebook-car-scraper");
+    expect(sorted[1].id).toBe("atlas");
+  });
+
+  it("pushes projects with no commit date to the end", () => {
+    const projects: Project[] = [
+      { ...mockProjects[0] }, // null lastCommit
+      { ...mockProjects[1], lastCommit: { message: "x", date: "2026-04-01T00:00:00Z", sha: "a" } },
+    ];
+    const sorted = sortByRecentActivity(projects);
+    expect(sorted[0].id).toBe("facebook-car-scraper");
+    expect(sorted[1].id).toBe("atlas");
+  });
+});
+
+describe("getFreshness", () => {
+  it("returns 'unknown' when lastCommit is null", () => {
+    expect(getFreshness(mockProjects[0])).toBe("unknown");
+  });
+
+  it("returns 'fresh' for commits within 7 days", () => {
+    const project = { ...mockProjects[0], lastCommit: { message: "x", date: new Date().toISOString(), sha: "a" } };
+    expect(getFreshness(project)).toBe("fresh");
+  });
+
+  it("returns 'recent' for commits within 30 days", () => {
+    const twoWeeksAgo = new Date(Date.now() - 14 * 86_400_000).toISOString();
+    const project = { ...mockProjects[0], lastCommit: { message: "x", date: twoWeeksAgo, sha: "a" } };
+    expect(getFreshness(project)).toBe("recent");
+  });
+
+  it("returns 'stale' for commits older than 30 days", () => {
+    const sixtyDaysAgo = new Date(Date.now() - 60 * 86_400_000).toISOString();
+    const project = { ...mockProjects[0], lastCommit: { message: "x", date: sixtyDaysAgo, sha: "a" } };
+    expect(getFreshness(project)).toBe("stale");
   });
 });

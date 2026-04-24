@@ -4,6 +4,7 @@ export interface Filters {
   status?: ProjectStatus[];
   stack?: string[];
   type?: ProjectType[];
+  freshness?: Freshness[];
   search?: string;
 }
 
@@ -11,6 +12,7 @@ export interface FilterOptions {
   statuses: ProjectStatus[];
   stacks: string[];
   types: ProjectType[];
+  freshnesses: Freshness[];
 }
 
 export function loadProjects(): Project[] {
@@ -34,6 +36,12 @@ export function filterProjects(
       return false;
     }
     if (filters.type?.length && !filters.type.includes(p.type)) {
+      return false;
+    }
+    if (
+      filters.freshness?.length &&
+      !filters.freshness.includes(getFreshness(p))
+    ) {
       return false;
     }
     if (filters.search) {
@@ -74,5 +82,8 @@ export function getFilterOptions(projects: Project[]): FilterOptions {
   const statuses = [...new Set(projects.map((p) => p.status))].sort();
   const stacks = [...new Set(projects.flatMap((p) => p.stack))].sort();
   const types = [...new Set(projects.map((p) => p.type))].sort();
-  return { statuses, stacks, types };
+  const freshnesses: Freshness[] = ["fresh", "recent", "stale", "unknown"].filter(
+    (f) => projects.some((p) => getFreshness(p) === f)
+  ) as Freshness[];
+  return { statuses, stacks, types, freshnesses };
 }

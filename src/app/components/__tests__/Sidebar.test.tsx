@@ -5,6 +5,7 @@ const mockFilterOptions = {
   statuses: ["active" as const, "paused" as const],
   stacks: ["nextjs", "python"],
   types: ["web-app" as const, "desktop-app" as const],
+  freshnesses: ["stale" as const, "unknown" as const],
 };
 
 describe("Sidebar", () => {
@@ -19,7 +20,7 @@ describe("Sidebar", () => {
     expect(screen.getByText("Projects")).toBeInTheDocument();
   });
 
-  it("renders all three filter groups", () => {
+  it("renders all four filter groups", () => {
     render(
       <Sidebar
         filterOptions={mockFilterOptions}
@@ -30,6 +31,7 @@ describe("Sidebar", () => {
     expect(screen.getByText("Status")).toBeInTheDocument();
     expect(screen.getByText("Stack")).toBeInTheDocument();
     expect(screen.getByText("Type")).toBeInTheDocument();
+    expect(screen.getByText("Freshness")).toBeInTheDocument();
   });
 
   it("renders filter pills for each option", () => {

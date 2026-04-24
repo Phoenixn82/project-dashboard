@@ -18,6 +18,7 @@ const mockProjects: Project[] = [
     openIssues: 0,
     repoDescription: "",
     updatedAt: "",
+    launchCommand: null,
   },
   {
     id: "job-findr",
@@ -34,6 +35,7 @@ const mockProjects: Project[] = [
     openIssues: 0,
     repoDescription: "",
     updatedAt: "",
+    launchCommand: null,
   },
 ];
 

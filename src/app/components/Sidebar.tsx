@@ -7,7 +7,7 @@ interface SidebarProps {
   filterOptions: FilterOptions;
   activeFilters: Filters;
   onFilterChange: (
-    category: "status" | "stack" | "type",
+    category: "status" | "stack" | "type" | "freshness",
     value: string
   ) => void;
   onReset?: () => void;
@@ -24,7 +24,8 @@ export function Sidebar({
   const hasActiveFilters =
     (activeFilters.status?.length ?? 0) > 0 ||
     (activeFilters.stack?.length ?? 0) > 0 ||
-    (activeFilters.type?.length ?? 0) > 0;
+    (activeFilters.type?.length ?? 0) > 0 ||
+    (activeFilters.freshness?.length ?? 0) > 0;
 
   return (
     <aside
@@ -60,6 +61,13 @@ export function Sidebar({
         options={filterOptions.types}
         activeValues={activeFilters.type ?? []}
         onToggle={(v) => onFilterChange("type", v)}
+      />
+
+      <FilterGroup
+        label="Freshness"
+        options={filterOptions.freshnesses}
+        activeValues={activeFilters.freshness ?? []}
+        onToggle={(v) => onFilterChange("freshness", v)}
       />
     </aside>
   );
