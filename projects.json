@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-04-24T08:55:15.781Z",
+    "updatedAt": "2026-04-24T23:20:46.458Z",
     "launchCommand": "npm run dev"
   },
   {
@@ -96,7 +96,7 @@
     ],
     "openIssues": 3,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-04-24T08:55:15.753Z",
+    "updatedAt": "2026-04-24T23:20:46.466Z",
     "launchCommand": "npm start"
   },
   {
@@ -112,11 +112,41 @@
       "docker"
     ],
     "type": "desktop-app",
-    "lastCommit": null,
-    "recentCommits": [],
+    "lastCommit": {
+      "message": "Merge branch 'worktree-agent-a8e4949d'",
+      "date": "2026-04-20T23:47:52Z",
+      "sha": "869032d6f9fd57c57d3ff2121b90f7236869ec94"
+    },
+    "recentCommits": [
+      {
+        "message": "Merge branch 'worktree-agent-a8e4949d'",
+        "date": "2026-04-20T23:47:52Z",
+        "sha": "869032d6f9fd57c57d3ff2121b90f7236869ec94"
+      },
+      {
+        "message": "feat(sp8): Docker multi-stage build, docker-compose, GitHub Actions CI",
+        "date": "2026-04-20T23:47:47Z",
+        "sha": "cdbd844da7665d50cf6b3bef27e58c59a4e92105"
+      },
+      {
+        "message": "feat(sp8): health checks, structured logging, error handling, CORS",
+        "date": "2026-04-20T23:41:35Z",
+        "sha": "ed9d323d6cd4d3733337ff465667da8befa7d1d6"
+      },
+      {
+        "message": "Merge branch 'worktree-agent-ac4fe56a'",
+        "date": "2026-04-20T23:28:08Z",
+        "sha": "26325be7f76b6dcce01202f3fa654db8e2facf36"
+      },
+      {
+        "message": "feat(sp6): messenger + negotiation rewired against VehicleWorkflow",
+        "date": "2026-04-20T23:27:36Z",
+        "sha": "b183e856ed71f17ea7ccf9c78ade24ff8a7aff2b"
+      }
+    ],
     "openIssues": 0,
-    "repoDescription": "",
-    "updatedAt": "",
+    "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
+    "updatedAt": "2026-04-24T23:20:46.638Z",
     "launchCommand": "start.bat"
   },
   {
@@ -132,11 +162,41 @@
       "tailwind"
     ],
     "type": "web-app",
-    "lastCommit": null,
-    "recentCommits": [],
+    "lastCommit": {
+      "message": "feat: site overhaul — new pages, UI revamp, and build fix",
+      "date": "2026-04-20T20:20:25Z",
+      "sha": "635e9ef0e5f3557bf88e4bc3634600eed9c952a4"
+    },
+    "recentCommits": [
+      {
+        "message": "feat: site overhaul — new pages, UI revamp, and build fix",
+        "date": "2026-04-20T20:20:25Z",
+        "sha": "635e9ef0e5f3557bf88e4bc3634600eed9c952a4"
+      },
+      {
+        "message": "fix: initialize Resend inside handler to prevent build-time crash when env var is absent",
+        "date": "2026-04-12T20:25:34Z",
+        "sha": "8b961a3a5e634b52155682c91a18a94748d061ef"
+      },
+      {
+        "message": "feat: major UI/content overhaul across site",
+        "date": "2026-04-12T19:56:26Z",
+        "sha": "4a2f03a99e5fb60ddcd8fc9afb78fed8f680acc2"
+      },
+      {
+        "message": "fix: escape email HTML, add input validation, handle network errors, use BUSINESS constants",
+        "date": "2026-04-10T21:03:50Z",
+        "sha": "0c81770df888283d2894786496a1f05dd18de691"
+      },
+      {
+        "message": "feat: wire sell form to /api/sell-lead, show inline error on failure",
+        "date": "2026-04-10T21:01:15Z",
+        "sha": "5e2b70d049911a12bd89333ec22d72eb11288712"
+      }
+    ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "",
+    "updatedAt": "2026-04-24T23:20:46.465Z",
     "launchCommand": "npm run dev"
   },
   {
@@ -153,11 +213,41 @@
       "python"
     ],
     "type": "web-app",
-    "lastCommit": null,
-    "recentCommits": [],
+    "lastCommit": {
+      "message": "feat: skill extraction pipeline, scheduler API, full-text search, crash course UI",
+      "date": "2026-04-24T23:11:27Z",
+      "sha": "166e762b1e4de02a0119a221a824a2127fc2ff27"
+    },
+    "recentCommits": [
+      {
+        "message": "feat: skill extraction pipeline, scheduler API, full-text search, crash course UI",
+        "date": "2026-04-24T23:11:27Z",
+        "sha": "166e762b1e4de02a0119a221a824a2127fc2ff27"
+      },
+      {
+        "message": "feat: wire full pipeline end-to-end with notifications and real API integration",
+        "date": "2026-04-24T23:01:58Z",
+        "sha": "35e5170a7d963d9bf549c7f7428a3c65d74c560c"
+      },
+      {
+        "message": "feat: add autocomplete dropdowns to all search/input fields",
+        "date": "2026-04-24T01:39:28Z",
+        "sha": "004f6201e7365b2688b33bd64220e4937dbeb8a2"
+      },
+      {
+        "message": "fix: launcher PS 5.1 compatibility - remove && and unicode escapes",
+        "date": "2026-04-24T01:03:36Z",
+        "sha": "4117ed128e4031d3b374f5b33a8f44bb1ddf7578"
+      },
+      {
+        "message": "fix: gitignore supabase CLI temp files and use Resend free tier sender",
+        "date": "2026-04-24T00:54:59Z",
+        "sha": "90b4028665e9b543118cdefd846ccf12ef88ad86"
+      }
+    ],
     "openIssues": 0,
-    "repoDescription": "",
-    "updatedAt": "",
+    "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
+    "updatedAt": "2026-04-24T23:20:46.489Z",
     "launchCommand": "docker-compose up"
   }
 ]
