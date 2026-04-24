@@ -46,8 +46,10 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-04-24T23:20:46.458Z",
-    "launchCommand": "npm run dev"
+    "updatedAt": "2026-04-24T23:18:41.830Z",
+    "launchCommand": "npm run dev",
+    "visibility": "public",
+    "fetchError": null
   },
   {
     "id": "claude-usage-widget",
@@ -96,8 +98,10 @@
     ],
     "openIssues": 3,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-04-24T23:20:46.466Z",
-    "launchCommand": "npm start"
+    "updatedAt": "2026-04-24T23:18:41.833Z",
+    "launchCommand": "npm start",
+    "visibility": "public",
+    "fetchError": null
   },
   {
     "id": "facebook-car-scraper",
@@ -146,8 +150,10 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-04-24T23:20:46.638Z",
-    "launchCommand": "start.bat"
+    "updatedAt": "2026-04-24T23:18:41.907Z",
+    "launchCommand": "start.bat",
+    "fetchError": null,
+    "visibility": "private"
   },
   {
     "id": "hometown-hybrids",
@@ -196,8 +202,10 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-04-24T23:20:46.465Z",
-    "launchCommand": "npm run dev"
+    "updatedAt": "2026-04-24T23:18:41.909Z",
+    "launchCommand": "npm run dev",
+    "fetchError": null,
+    "visibility": "private"
   },
   {
     "id": "job-findr",
@@ -247,7 +255,9 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-04-24T23:20:46.489Z",
-    "launchCommand": "docker-compose up"
+    "updatedAt": "2026-04-24T23:18:42.087Z",
+    "launchCommand": "docker-compose up",
+    "fetchError": null,
+    "visibility": "private"
   }
 ]

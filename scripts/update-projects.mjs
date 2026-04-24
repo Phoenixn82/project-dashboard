@@ -6,17 +6,28 @@
  * updates commit info and metadata, writes the file back.
  *
  * Usage: node scripts/update-projects.mjs
- * Env: GITHUB_TOKEN (optional, increases rate limit from 60 to 5000 req/hr)
+ * Env: GITHUB_TOKEN — required for private repos; needs `repo` scope.
+ *      Falls back to `gh auth token` when running locally.
  */
 
 import { readFile, writeFile } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECTS_PATH = resolve(__dirname, "..", "projects.json");
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "";
+function getToken() {
+  if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN;
+  try {
+    return execSync("gh auth token", { encoding: "utf-8" }).trim();
+  } catch {
+    return "";
+  }
+}
+
+const GITHUB_TOKEN = getToken();
 const headers = {
   Accept: "application/vnd.github.v3+json",
   "User-Agent": "project-dashboard-updater",
