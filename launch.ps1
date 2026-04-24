@@ -1,7 +1,7 @@
 $projectDir = "C:\Users\thero\OneDrive\Desktop\claude_projects\project_dashboard"
 Set-Location $projectDir
 
-# Start Next.js dev server hidden
+# Start Next.js dev server completely hidden
 $nextJob = Start-Process -FilePath "C:\Program Files\nodejs\npm.cmd" -ArgumentList "run","dev" -WorkingDirectory $projectDir -WindowStyle Hidden -PassThru
 
 # Wait for server to be ready
@@ -16,9 +16,9 @@ for ($i = 0; $i -lt 30; $i++) {
 }
 
 if ($ready) {
-    # Launch Electron (visible)
+    # Launch Electron hidden (no console window)
     $electronPath = Join-Path $projectDir "node_modules\.bin\electron.cmd"
-    $electronProc = Start-Process -FilePath $electronPath -ArgumentList "." -WorkingDirectory $projectDir -PassThru
+    $electronProc = Start-Process -FilePath $electronPath -ArgumentList "." -WorkingDirectory $projectDir -WindowStyle Hidden -PassThru
     $electronProc.WaitForExit()
 }
 

@@ -7,10 +7,11 @@ let nextProcess;
 
 function startNextServer() {
   const projectRoot = path.resolve(__dirname, "..");
-  const npmCmd = process.platform === "win32" ? "npm.cmd" : "npm";
-  nextProcess = spawn(npmCmd, ["run", "dev"], {
+  nextProcess = spawn("npm", ["run", "dev"], {
     cwd: projectRoot,
+    shell: true,
     stdio: "pipe",
+    windowsHide: true,
   });
 
   return new Promise((resolve) => {
@@ -22,7 +23,6 @@ function startNextServer() {
     });
 
     nextProcess.stderr.on("data", (data) => {
-      // Next.js logs some info to stderr
       const output = data.toString();
       if (output.includes("Ready in") || output.includes("localhost:3000")) {
         resolve();
@@ -41,6 +41,7 @@ async function createWindow() {
     width: 1280,
     height: 800,
     title: "Project Dashboard",
+    icon: path.join(__dirname, "icon.ico"),
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
