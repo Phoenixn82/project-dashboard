@@ -47,7 +47,7 @@
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
     "updatedAt": "2026-04-24T23:18:41.830Z",
-    "launchCommand": "npm run dev",
+    "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
   },
@@ -203,7 +203,7 @@
     "openIssues": 0,
     "repoDescription": "",
     "updatedAt": "2026-04-24T23:18:41.909Z",
-    "launchCommand": "npm run dev",
+    "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
   },

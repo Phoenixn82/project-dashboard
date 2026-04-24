@@ -30,21 +30,13 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    // On Windows, use 'start' to give the process its own console window.
-    // Without this, detached + stdio:"ignore" strips console handles and
-    // batch-file commands like timeout/pause break immediately.
-    const child =
-      process.platform === "win32"
-        ? spawn("cmd", ["/c", "start", '""', "/D", projectDir, launchCommand], {
-            detached: true,
-            stdio: "ignore",
-          })
-        : spawn(launchCommand, {
-            cwd: projectDir,
-            shell: true,
-            detached: true,
-            stdio: "ignore",
-          });
+    const child = spawn(launchCommand, {
+      cwd: projectDir,
+      shell: true,
+      detached: true,
+      stdio: "ignore",
+      windowsHide: true,
+    });
 
     child.unref();
 
