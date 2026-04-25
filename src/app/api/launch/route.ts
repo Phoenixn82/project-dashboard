@@ -11,19 +11,22 @@ function extractPort(launchCommand: string): number {
   return match ? parseInt(match[1], 10) : 3000;
 }
 
-function launchWorkspace(projectDir: string, port: number) {
+function launchWorkspace(projectDir: string, launchCommand: string, port: number) {
   const backtick = "`";
   const psScript = [
     "Add-Type -AssemblyName System.Windows.Forms",
-    "Add-Type @\"\nusing System;\nusing System.Runtime.InteropServices;\npublic class Win32 {\n  [DllImport(\"user32.dll\")] public static extern bool SetForegroundWindow(IntPtr hWnd);\n  [DllImport(\"user32.dll\")] public static extern bool SetWindowPos(IntPtr hWnd, IntPtr after, int x, int y, int w, int h, uint flags);\n  [DllImport(\"user32.dll\")] public static extern bool ShowWindow(IntPtr hWnd, int cmd);\n}\n\"@",
+    'Add-Type @"\nusing System;\nusing System.Runtime.InteropServices;\npublic class Win32 {\n  [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);\n  [DllImport("user32.dll")] public static extern bool SetWindowPos(IntPtr hWnd, IntPtr after, int x, int y, int w, int h, uint flags);\n  [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int cmd);\n}\n"@',
     "",
     "$projectDir = '" + projectDir.replace(/'/g, "''") + "'",
     "$port = " + port,
     "",
+    "# Start dev server completely hidden",
+    "Start-Process -FilePath 'cmd.exe' -ArgumentList '/c " + launchCommand.replace(/'/g, "''") + "' -WorkingDirectory $projectDir -WindowStyle Hidden",
+    "",
     "# Open Antigravity",
     "Start-Process -FilePath 'antigravity.cmd' -ArgumentList $projectDir",
     "",
-    "# Wait for window",
+    "# Wait for Antigravity window",
     "$agWnd = $null",
     "for ($i = 0; $i -lt 30; $i++) {",
     "  Start-Sleep -Seconds 1",
@@ -49,36 +52,32 @@ function launchWorkspace(projectDir: string, port: number) {
     "for ($i = 0; $i -lt 30; $i++) {",
     "  Start-Sleep -Seconds 1",
     "  try {",
-    "    $null = Invoke-WebRequest -Uri \"http://localhost:$port\" -Method Head -TimeoutSec 2 -ErrorAction Stop",
+    '    $null = Invoke-WebRequest -Uri "http://localhost:$port" -Method Head -TimeoutSec 2 -ErrorAction Stop',
     "    $ready = $true; break",
     "  } catch {}",
     "}",
     "",
     "if ($ready) {",
-    "  # Snapshot existing window handles before opening browser",
-    "  $before = Get-Process | Where-Object { $_.MainWindowHandle -ne 0 } | ForEach-Object { $_.MainWindowHandle }",
+    '  Start-Process "http://localhost:$port"',
     "",
-    "  Start-Process \"http://localhost:$port\"",
-    "",
-    "  # Wait for a NEW window to appear (the browser)",
+    "  # Wait for Chrome to fully open with the page",
     "  $browserHwnd = $null",
-    "  for ($i = 0; $i -lt 15; $i++) {",
+    "  for ($i = 0; $i -lt 10; $i++) {",
     "    Start-Sleep -Seconds 1",
-    "    $after = Get-Process | Where-Object { $_.MainWindowHandle -ne 0 -and $_.MainWindowHandle -notin $before }",
-    "    if ($after) { $browserHwnd = ($after | Select-Object -First 1).MainWindowHandle; break }",
+    "    $br = Get-Process -Name 'chrome' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -ne '' } | Sort-Object StartTime -Descending | Select-Object -First 1",
+    "    if ($br) { $browserHwnd = $br.MainWindowHandle; break }",
     "  }",
     "",
     "  $screen = [System.Windows.Forms.Screen]::PrimaryScreen.WorkingArea",
     "  $halfW = [math]::Floor($screen.Width / 2)",
     "",
-    "  # Snap Antigravity to left half",
+    "  # Re-fetch Antigravity window",
     "  $ag = Get-Process -Name 'Antigravity' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 } | Sort-Object StartTime -Descending | Select-Object -First 1",
     "  if ($ag) {",
     "    [Win32]::ShowWindow($ag.MainWindowHandle, 9)",
     "    [Win32]::SetWindowPos($ag.MainWindowHandle, [IntPtr]::Zero, $screen.X, $screen.Y, $halfW, $screen.Height, 0x0040)",
     "  }",
     "",
-    "  # Snap browser to right half",
     "  if ($browserHwnd) {",
     "    [Win32]::ShowWindow($browserHwnd, 9)",
     "    [Win32]::SetWindowPos($browserHwnd, [IntPtr]::Zero, [int]($screen.X + $halfW), $screen.Y, $halfW, $screen.Height, 0x0040)",
@@ -86,7 +85,6 @@ function launchWorkspace(projectDir: string, port: number) {
     "}",
   ].join("\n");
 
-  // Write script to temp file and execute
   const scriptPath = resolve(tmpdir(), "dashboard-launch-" + Date.now() + ".ps1");
   writeFileSync(scriptPath, psScript, "utf-8");
 
@@ -123,23 +121,13 @@ export async function POST(req: NextRequest) {
   try {
     const port = extractPort(launchCommand);
 
-    // Start the dev server (hidden)
-    const server = spawn(launchCommand, {
-      cwd: projectDir,
-      shell: true,
-      detached: true,
-      stdio: "ignore",
-      windowsHide: true,
-    });
-    server.unref();
-
-    // PowerShell handles: open editor, terminal, claude, browser, snap
-    launchWorkspace(projectDir, port);
+    // Single PowerShell script handles everything:
+    // dev server (hidden), editor, terminal, claude, browser, snap
+    launchWorkspace(projectDir, launchCommand, port);
 
     return NextResponse.json({
       ok: true,
       message: `Launching "${id}" — editor + browser on :${port}`,
-      pid: server.pid,
     });
   } catch (err) {
     return NextResponse.json(
