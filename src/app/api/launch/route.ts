@@ -15,7 +15,7 @@ function launchWorkspace(projectDir: string, launchCommand: string, port: number
   const backtick = "`";
   const psScript = [
     "Add-Type -AssemblyName System.Windows.Forms",
-    'Add-Type @"\nusing System;\nusing System.Runtime.InteropServices;\npublic class Win32 {\n  [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);\n  [DllImport("user32.dll")] public static extern bool SetWindowPos(IntPtr hWnd, IntPtr after, int x, int y, int w, int h, uint flags);\n  [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int cmd);\n}\n"@',
+    'Add-Type @"\nusing System;\nusing System.Runtime.InteropServices;\npublic class Win32 {\n  [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);\n}\n"@',
     "",
     "$projectDir = '" + projectDir.replace(/'/g, "''") + "'",
     "$port = " + port,
@@ -26,7 +26,7 @@ function launchWorkspace(projectDir: string, launchCommand: string, port: number
     "# Open Antigravity",
     "Start-Process -FilePath 'antigravity.cmd' -ArgumentList $projectDir",
     "",
-    "# Wait for Antigravity window",
+    "# Wait for Antigravity window with this project",
     "$agWnd = $null",
     "for ($i = 0; $i -lt 30; $i++) {",
     "  Start-Sleep -Seconds 1",
@@ -39,12 +39,18 @@ function launchWorkspace(projectDir: string, launchCommand: string, port: number
     "}",
     "",
     "if ($agWnd) {",
+    "  # Focus Antigravity and open terminal with Claude",
     "  [Win32]::SetForegroundWindow($agWnd.MainWindowHandle)",
     "  Start-Sleep -Milliseconds 500",
-    "  # Ctrl+backtick to open terminal",
     "  [System.Windows.Forms.SendKeys]::SendWait('^{" + backtick + "}')",
     "  Start-Sleep -Seconds 2",
     "  [System.Windows.Forms.SendKeys]::SendWait('claude --dangerously-skip-permissions{ENTER}')",
+    "  Start-Sleep -Milliseconds 500",
+    "",
+    "  # Snap Antigravity to LEFT half with Win+Left",
+    "  [Win32]::SetForegroundWindow($agWnd.MainWindowHandle)",
+    "  Start-Sleep -Milliseconds 300",
+    "  [System.Windows.Forms.SendKeys]::SendWait('#{LEFT}')",
     "}",
     "",
     "# Wait for dev server",
@@ -58,30 +64,13 @@ function launchWorkspace(projectDir: string, launchCommand: string, port: number
     "}",
     "",
     "if ($ready) {",
+    "  # Open browser",
     '  Start-Process "http://localhost:$port"',
+    "  Start-Sleep -Seconds 3",
     "",
-    "  # Wait for Chrome to fully open with the page",
-    "  $browserHwnd = $null",
-    "  for ($i = 0; $i -lt 10; $i++) {",
-    "    Start-Sleep -Seconds 1",
-    "    $br = Get-Process -Name 'chrome' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -ne '' } | Sort-Object StartTime -Descending | Select-Object -First 1",
-    "    if ($br) { $browserHwnd = $br.MainWindowHandle; break }",
-    "  }",
-    "",
-    "  $screen = [System.Windows.Forms.Screen]::PrimaryScreen.WorkingArea",
-    "  $halfW = [math]::Floor($screen.Width / 2)",
-    "",
-    "  # Re-fetch Antigravity window",
-    "  $ag = Get-Process -Name 'Antigravity' -ErrorAction SilentlyContinue | Where-Object { $_.MainWindowHandle -ne 0 } | Sort-Object StartTime -Descending | Select-Object -First 1",
-    "  if ($ag) {",
-    "    [Win32]::ShowWindow($ag.MainWindowHandle, 9)",
-    "    [Win32]::SetWindowPos($ag.MainWindowHandle, [IntPtr]::Zero, $screen.X, $screen.Y, $halfW, $screen.Height, 0x0040)",
-    "  }",
-    "",
-    "  if ($browserHwnd) {",
-    "    [Win32]::ShowWindow($browserHwnd, 9)",
-    "    [Win32]::SetWindowPos($browserHwnd, [IntPtr]::Zero, [int]($screen.X + $halfW), $screen.Y, $halfW, $screen.Height, 0x0040)",
-    "  }",
+    "  # Snap browser to RIGHT half with Win+Right",
+    "  # The browser should be the foreground window after opening",
+    "  [System.Windows.Forms.SendKeys]::SendWait('#{RIGHT}')",
     "}",
   ].join("\n");
 
@@ -120,9 +109,6 @@ export async function POST(req: NextRequest) {
 
   try {
     const port = extractPort(launchCommand);
-
-    // Single PowerShell script handles everything:
-    // dev server (hidden), editor, terminal, claude, browser, snap
     launchWorkspace(projectDir, launchCommand, port);
 
     return NextResponse.json({
