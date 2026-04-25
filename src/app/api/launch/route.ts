@@ -26,6 +26,7 @@ async function waitForServer(port: number, timeoutMs = 30000): Promise<boolean> 
 function snapWindows() {
   // PowerShell script to snap Antigravity left, browser right
   const ps = `
+Add-Type -AssemblyName System.Windows.Forms
 Add-Type @"
 using System;
 using System.Runtime.InteropServices;
@@ -100,24 +101,20 @@ export async function POST(req: NextRequest) {
     server.unref();
 
     // 2. Open Antigravity at the project folder
-    const editor = spawn("antigravity", [projectDir], {
+    spawn("antigravity", [projectDir], {
+      shell: true,
       detached: true,
       stdio: "ignore",
       windowsHide: true,
-    });
-    editor.unref();
+    }).unref();
 
-    // 3. Launch Claude in Antigravity's terminal via the CLI
-    //    Small delay to let the editor window initialize
+    // 3. Launch Claude in Antigravity's terminal
+    //    Delay to let the editor window initialize
     setTimeout(() => {
       spawn(
         "antigravity",
-        [
-          "--reuse-window",
-          "--command",
-          `workbench.action.terminal.new`,
-        ],
-        { detached: true, stdio: "ignore", windowsHide: true }
+        ["--reuse-window", "--command", "workbench.action.terminal.new"],
+        { shell: true, detached: true, stdio: "ignore", windowsHide: true }
       ).unref();
 
       // Type claude command into the new terminal
@@ -129,10 +126,10 @@ export async function POST(req: NextRequest) {
             "-Command",
             `Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.SendKeys]::SendWait('claude --dangerously-skip-permissions{ENTER}')`,
           ],
-          { detached: true, stdio: "ignore", windowsHide: true }
+          { shell: true, detached: true, stdio: "ignore", windowsHide: true }
         ).unref();
-      }, 2000);
-    }, 3000);
+      }, 3000);
+    }, 4000);
 
     // 4. Wait for server, then open browser and snap windows
     waitForServer(port).then((ready) => {
