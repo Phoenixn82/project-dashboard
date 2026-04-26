@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-04-25T07:59:16.379Z",
+    "updatedAt": "2026-04-26T08:11:01.574Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-04-25T07:59:16.293Z",
+    "updatedAt": "2026-04-26T08:11:01.566Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-04-25T07:59:16.388Z",
+    "updatedAt": "2026-04-26T08:11:01.623Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-04-25T07:59:16.386Z",
+    "updatedAt": "2026-04-26T08:11:01.637Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -222,40 +222,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix: Indeed changed job key field from 'jk' to 'jobkey'",
-      "date": "2026-04-25T00:07:01Z",
-      "sha": "afd555c4bb97d02795c957fc6f5979c68512494f"
+      "message": "fix: use asyncio.run() in email tests for CI compatibility",
+      "date": "2026-04-26T00:31:42Z",
+      "sha": "870e653110364591fc127b7cf4958fb8fcd524a7"
     },
     "recentCommits": [
       {
-        "message": "fix: Indeed changed job key field from 'jk' to 'jobkey'",
-        "date": "2026-04-25T00:07:01Z",
-        "sha": "afd555c4bb97d02795c957fc6f5979c68512494f"
+        "message": "fix: use asyncio.run() in email tests for CI compatibility",
+        "date": "2026-04-26T00:31:42Z",
+        "sha": "870e653110364591fc127b7cf4958fb8fcd524a7"
       },
       {
-        "message": "fix: run Camoufox headless by default to avoid browser window spam",
-        "date": "2026-04-24T23:51:25Z",
-        "sha": "e291256807d6ed25e7cc60e567620cdd10a837cb"
+        "message": "fix: add pydantic[email] dependency for CI",
+        "date": "2026-04-26T00:29:00Z",
+        "sha": "cac74c2fb109c8eeedc1aa37b59d42d9928ca8eb"
       },
       {
-        "message": "feat: skill extraction pipeline, scheduler API, full-text search, crash course UI",
-        "date": "2026-04-24T23:11:27Z",
-        "sha": "166e762b1e4de02a0119a221a824a2127fc2ff27"
+        "message": "fix: CI lint — auto-fix before check, pin import order",
+        "date": "2026-04-26T00:27:07Z",
+        "sha": "23ff46271bc9bb159ac1302ae5f1e16ae3e3281e"
       },
       {
-        "message": "feat: wire full pipeline end-to-end with notifications and real API integration",
-        "date": "2026-04-24T23:01:58Z",
-        "sha": "35e5170a7d963d9bf549c7f7428a3c65d74c560c"
+        "message": "fix: add isort known-first-party config for CI",
+        "date": "2026-04-26T00:24:52Z",
+        "sha": "6a5cacbe8e5cd9c99cbddda3337cfe3ed0da42bb"
       },
       {
-        "message": "feat: add autocomplete dropdowns to all search/input fields",
-        "date": "2026-04-24T01:39:28Z",
-        "sha": "004f6201e7365b2688b33bd64220e4937dbeb8a2"
+        "message": "feat: add Render deployment config (render.yaml)",
+        "date": "2026-04-26T00:23:05Z",
+        "sha": "0ca3ac98be87a2ed8de956bb98017d8bfb03e246"
       }
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-04-25T07:59:16.582Z",
+    "updatedAt": "2026-04-26T08:11:01.664Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
