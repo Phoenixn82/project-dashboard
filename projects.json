@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-04-26T08:11:01.574Z",
+    "updatedAt": "2026-04-27T09:12:48.695Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-04-26T08:11:01.566Z",
+    "updatedAt": "2026-04-27T09:12:48.656Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-04-26T08:11:01.623Z",
+    "updatedAt": "2026-04-27T09:12:48.697Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-04-26T08:11:01.637Z",
+    "updatedAt": "2026-04-27T09:12:48.678Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -222,40 +222,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix: use asyncio.run() in email tests for CI compatibility",
-      "date": "2026-04-26T00:31:42Z",
-      "sha": "870e653110364591fc127b7cf4958fb8fcd524a7"
+      "message": "fix: disable automatic onboarding redirect until flow is finalized",
+      "date": "2026-04-26T20:58:48Z",
+      "sha": "e86d313a777af3517d9ab42df27c220b0564441d"
     },
     "recentCommits": [
       {
-        "message": "fix: use asyncio.run() in email tests for CI compatibility",
-        "date": "2026-04-26T00:31:42Z",
-        "sha": "870e653110364591fc127b7cf4958fb8fcd524a7"
+        "message": "fix: disable automatic onboarding redirect until flow is finalized",
+        "date": "2026-04-26T20:58:48Z",
+        "sha": "e86d313a777af3517d9ab42df27c220b0564441d"
       },
       {
-        "message": "fix: add pydantic[email] dependency for CI",
-        "date": "2026-04-26T00:29:00Z",
-        "sha": "cac74c2fb109c8eeedc1aa37b59d42d9928ca8eb"
+        "message": "fix: skip onboarding redirect if user has completed it before",
+        "date": "2026-04-26T20:44:14Z",
+        "sha": "54d4088ece2c655dbf197679bc11b6e33afdbb85"
       },
       {
-        "message": "fix: CI lint — auto-fix before check, pin import order",
-        "date": "2026-04-26T00:27:07Z",
-        "sha": "23ff46271bc9bb159ac1302ae5f1e16ae3e3281e"
+        "message": "fix: stop redirecting to onboarding when backend is unreachable",
+        "date": "2026-04-26T20:41:51Z",
+        "sha": "3ccadef665124b64d9646395aff0ca2c3f5368b0"
       },
       {
-        "message": "fix: add isort known-first-party config for CI",
-        "date": "2026-04-26T00:24:52Z",
-        "sha": "6a5cacbe8e5cd9c99cbddda3337cfe3ed0da42bb"
+        "message": "feat: add autocomplete dropdowns to all onboarding inputs + fix port config",
+        "date": "2026-04-26T20:02:12Z",
+        "sha": "cfee994b8796245e6280fa805ee7655c5c6b43e4"
       },
       {
-        "message": "feat: add Render deployment config (render.yaml)",
-        "date": "2026-04-26T00:23:05Z",
-        "sha": "0ca3ac98be87a2ed8de956bb98017d8bfb03e246"
+        "message": "fix: job detail page not loading — ID type mismatch (int vs string)",
+        "date": "2026-04-26T19:50:40Z",
+        "sha": "0abffe262590fbf4d5815c25a3a35bbccfe7339e"
       }
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-04-26T08:11:01.664Z",
+    "updatedAt": "2026-04-27T09:12:48.716Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
