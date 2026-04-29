@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-04-28T09:13:48.840Z",
+    "updatedAt": "2026-04-29T09:05:02.723Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-04-28T09:13:48.731Z",
+    "updatedAt": "2026-04-29T09:05:02.672Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-04-28T09:13:48.815Z",
+    "updatedAt": "2026-04-29T09:05:02.744Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,11 +169,26 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "feat: site overhaul — new pages, UI revamp, and build fix",
-      "date": "2026-04-20T20:20:25Z",
-      "sha": "635e9ef0e5f3557bf88e4bc3634600eed9c952a4"
+      "message": "feat: large content + UX update from owner instructions",
+      "date": "2026-04-29T01:39:23Z",
+      "sha": "cf36e1ff2a805d6c2afdca6d2388c469accd1a56"
     },
     "recentCommits": [
+      {
+        "message": "feat: large content + UX update from owner instructions",
+        "date": "2026-04-29T01:39:23Z",
+        "sha": "cf36e1ff2a805d6c2afdca6d2388c469accd1a56"
+      },
+      {
+        "message": "feat: replace FAQ with old site content, delete About page",
+        "date": "2026-04-29T01:30:29Z",
+        "sha": "909fd31f475c4e3279e1db08278a32596b78f3a1"
+      },
+      {
+        "message": "feat: major content update — FAQ from old site, text changes, nav cleanup, warranty updates",
+        "date": "2026-04-25T01:10:22Z",
+        "sha": "599c4fb7ae748f41b642e6c7abb3d4d00ca6dbfd"
+      },
       {
         "message": "feat: site overhaul — new pages, UI revamp, and build fix",
         "date": "2026-04-20T20:20:25Z",
@@ -183,26 +198,11 @@
         "message": "fix: initialize Resend inside handler to prevent build-time crash when env var is absent",
         "date": "2026-04-12T20:25:34Z",
         "sha": "8b961a3a5e634b52155682c91a18a94748d061ef"
-      },
-      {
-        "message": "feat: major UI/content overhaul across site",
-        "date": "2026-04-12T19:56:26Z",
-        "sha": "4a2f03a99e5fb60ddcd8fc9afb78fed8f680acc2"
-      },
-      {
-        "message": "fix: escape email HTML, add input validation, handle network errors, use BUSINESS constants",
-        "date": "2026-04-10T21:03:50Z",
-        "sha": "0c81770df888283d2894786496a1f05dd18de691"
-      },
-      {
-        "message": "feat: wire sell form to /api/sell-lead, show inline error on failure",
-        "date": "2026-04-10T21:01:15Z",
-        "sha": "5e2b70d049911a12bd89333ec22d72eb11288712"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-04-28T09:13:48.863Z",
+    "updatedAt": "2026-04-29T09:05:02.745Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-04-28T09:13:48.850Z",
+    "updatedAt": "2026-04-29T09:05:02.730Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
