@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-01T08:53:22.839Z",
+    "updatedAt": "2026-05-02T08:17:06.425Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -65,11 +65,16 @@
     ],
     "type": "desktop-app",
     "lastCommit": {
-      "message": "docs: sync consolidated release notes from develop",
-      "date": "2026-05-01T00:49:40Z",
-      "sha": "488b64887662d09ae3246028985b6b31bb9b4e6f"
+      "message": "fix: graph button visibility in compact mode",
+      "date": "2026-05-01T14:05:08Z",
+      "sha": "fb4c59625e7137254212319ca3cdbc3e546a095b"
     },
     "recentCommits": [
+      {
+        "message": "fix: graph button visibility in compact mode",
+        "date": "2026-05-01T14:05:08Z",
+        "sha": "fb4c59625e7137254212319ca3cdbc3e546a095b"
+      },
       {
         "message": "docs: sync consolidated release notes from develop",
         "date": "2026-05-01T00:49:40Z",
@@ -89,16 +94,11 @@
         "message": "chore: bump version to 1.7.3",
         "date": "2026-05-01T00:01:54Z",
         "sha": "1eeda86112604f38ba902389378e28022e719d3d"
-      },
-      {
-        "message": "Release v1.7.3",
-        "date": "2026-05-01T00:00:19Z",
-        "sha": "be773387fc81d2da250cee7f766e38f9162b2100"
       }
     ],
     "openIssues": 1,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-01T08:53:22.760Z",
+    "updatedAt": "2026-05-02T08:17:06.336Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-01T08:53:22.825Z",
+    "updatedAt": "2026-05-02T08:17:06.469Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-01T08:53:22.828Z",
+    "updatedAt": "2026-05-02T08:17:06.457Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -222,40 +222,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix: disable automatic onboarding redirect until flow is finalized",
-      "date": "2026-04-26T20:58:48Z",
-      "sha": "e86d313a777af3517d9ab42df27c220b0564441d"
+      "message": "feat(billing): edge-function webhook + reverse trial + sprint/pro_plus tiers",
+      "date": "2026-05-02T06:21:43Z",
+      "sha": "dd144d0e2690042f61a14e3f738712f9cd73642d"
     },
     "recentCommits": [
       {
-        "message": "fix: disable automatic onboarding redirect until flow is finalized",
-        "date": "2026-04-26T20:58:48Z",
-        "sha": "e86d313a777af3517d9ab42df27c220b0564441d"
+        "message": "feat(billing): edge-function webhook + reverse trial + sprint/pro_plus tiers",
+        "date": "2026-05-02T06:21:43Z",
+        "sha": "dd144d0e2690042f61a14e3f738712f9cd73642d"
       },
       {
-        "message": "fix: skip onboarding redirect if user has completed it before",
-        "date": "2026-04-26T20:44:14Z",
-        "sha": "54d4088ece2c655dbf197679bc11b6e33afdbb85"
+        "message": "chore(db): track function search_path migration as 023",
+        "date": "2026-05-02T04:49:15Z",
+        "sha": "b26cdf6fad7a66a1667c8fe643ba1ecd36a8d253"
       },
       {
-        "message": "fix: stop redirecting to onboarding when backend is unreachable",
-        "date": "2026-04-26T20:41:51Z",
-        "sha": "3ccadef665124b64d9646395aff0ca2c3f5368b0"
+        "message": "feat(saas): public SaaS launch readiness — security, billing, deploy hardening",
+        "date": "2026-05-02T04:47:14Z",
+        "sha": "8bee78e01dfc16169a406c843161e099f1cf4bdb"
       },
       {
-        "message": "feat: add autocomplete dropdowns to all onboarding inputs + fix port config",
-        "date": "2026-04-26T20:02:12Z",
-        "sha": "cfee994b8796245e6280fa805ee7655c5c6b43e4"
+        "message": "fix(security): close 13 P1 IDOR/tenant-scoping holes from codex audit",
+        "date": "2026-05-01T21:44:42Z",
+        "sha": "27d81722ab7417fe1a418c85403b0376fb9ed852"
       },
       {
-        "message": "fix: job detail page not loading — ID type mismatch (int vs string)",
-        "date": "2026-04-26T19:50:40Z",
-        "sha": "0abffe262590fbf4d5815c25a3a35bbccfe7339e"
+        "message": "feat(billing): dev-mode tier switcher — clickable Free/Pro/Enterprise without Stripe",
+        "date": "2026-05-01T16:02:00Z",
+        "sha": "93e73c833bb80d74008ea42343ed37146ed8056a"
       }
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-01T08:53:22.884Z",
+    "updatedAt": "2026-05-02T08:17:06.420Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
