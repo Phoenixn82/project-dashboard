@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-04T09:11:13.803Z",
+    "updatedAt": "2026-05-05T09:03:36.949Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -96,9 +96,9 @@
         "sha": "1eeda86112604f38ba902389378e28022e719d3d"
       }
     ],
-    "openIssues": 0,
+    "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-04T09:11:13.760Z",
+    "updatedAt": "2026-05-05T09:03:36.935Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-04T09:11:13.868Z",
+    "updatedAt": "2026-05-05T09:03:36.970Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "feat: large content + UX update from owner instructions",
-      "date": "2026-04-29T01:39:23Z",
-      "sha": "cf36e1ff2a805d6c2afdca6d2388c469accd1a56"
+      "message": "fix: merge LocalVsNational info into Differentiators, drop the duplicate",
+      "date": "2026-05-05T01:10:35Z",
+      "sha": "eecdde704e759518771b1f306327010c994f5385"
     },
     "recentCommits": [
       {
-        "message": "feat: large content + UX update from owner instructions",
-        "date": "2026-04-29T01:39:23Z",
-        "sha": "cf36e1ff2a805d6c2afdca6d2388c469accd1a56"
+        "message": "fix: merge LocalVsNational info into Differentiators, drop the duplicate",
+        "date": "2026-05-05T01:10:35Z",
+        "sha": "eecdde704e759518771b1f306327010c994f5385"
       },
       {
-        "message": "feat: replace FAQ with old site content, delete About page",
-        "date": "2026-04-29T01:30:29Z",
-        "sha": "909fd31f475c4e3279e1db08278a32596b78f3a1"
+        "message": "fix(HowItWorks): drop redundant STEP 01/02/03 eyebrows; numbers turn green",
+        "date": "2026-05-05T01:06:57Z",
+        "sha": "683cd86f6a099a9bd9cd9a7ad84ef9bd49c491ce"
       },
       {
-        "message": "feat: major content update — FAQ from old site, text changes, nav cleanup, warranty updates",
-        "date": "2026-04-25T01:10:22Z",
-        "sha": "599c4fb7ae748f41b642e6c7abb3d4d00ca6dbfd"
+        "message": "fix: narrow vehicle quote two-column layout",
+        "date": "2026-05-05T01:05:25Z",
+        "sha": "7e26287f70e536255329d83571d417f70fcf63cd"
       },
       {
-        "message": "feat: site overhaul — new pages, UI revamp, and build fix",
-        "date": "2026-04-20T20:20:25Z",
-        "sha": "635e9ef0e5f3557bf88e4bc3634600eed9c952a4"
+        "message": "fix: hero size + car stretch + bouncing scroll-down arrow",
+        "date": "2026-05-05T01:00:51Z",
+        "sha": "c662392f67e72c3db7a876effaefe8b767386890"
       },
       {
-        "message": "fix: initialize Resend inside handler to prevent build-time crash when env var is absent",
-        "date": "2026-04-12T20:25:34Z",
-        "sha": "8b961a3a5e634b52155682c91a18a94748d061ef"
+        "message": "fix: hero full-width align with header + V2 HowItWorks + picker polish",
+        "date": "2026-05-05T00:55:19Z",
+        "sha": "a26b3f4f2b38d4f344f9d929ac087e2380d171fe"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-04T09:11:13.856Z",
+    "updatedAt": "2026-05-05T09:03:36.988Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-04T09:11:13.856Z",
+    "updatedAt": "2026-05-05T09:03:37.029Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
