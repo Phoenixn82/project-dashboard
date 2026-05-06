@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-05T09:03:36.949Z",
+    "updatedAt": "2026-05-06T09:14:48.369Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-05T09:03:36.935Z",
+    "updatedAt": "2026-05-06T09:14:48.470Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-05T09:03:36.970Z",
+    "updatedAt": "2026-05-06T09:14:48.393Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix: merge LocalVsNational info into Differentiators, drop the duplicate",
-      "date": "2026-05-05T01:10:35Z",
-      "sha": "eecdde704e759518771b1f306327010c994f5385"
+      "message": "Wire Lexus RX 400h/450h side-profile photo",
+      "date": "2026-05-06T04:37:22Z",
+      "sha": "90859238606ffd75bc74290622ab9b715aa8724f"
     },
     "recentCommits": [
       {
-        "message": "fix: merge LocalVsNational info into Differentiators, drop the duplicate",
-        "date": "2026-05-05T01:10:35Z",
-        "sha": "eecdde704e759518771b1f306327010c994f5385"
+        "message": "Wire Lexus RX 400h/450h side-profile photo",
+        "date": "2026-05-06T04:37:22Z",
+        "sha": "90859238606ffd75bc74290622ab9b715aa8724f"
       },
       {
-        "message": "fix(HowItWorks): drop redundant STEP 01/02/03 eyebrows; numbers turn green",
-        "date": "2026-05-05T01:06:57Z",
-        "sha": "683cd86f6a099a9bd9cd9a7ad84ef9bd49c491ce"
+        "message": "Add Toyota Highlander + Lexus RX 400h/450h to vehicle catalog",
+        "date": "2026-05-06T04:17:51Z",
+        "sha": "80d8430e6e00af583e7b5216920cb6de0c210f0b"
       },
       {
-        "message": "fix: narrow vehicle quote two-column layout",
-        "date": "2026-05-05T01:05:25Z",
-        "sha": "7e26287f70e536255329d83571d417f70fcf63cd"
+        "message": "redesign /pricing to match design template + scale homepage selector to 80%",
+        "date": "2026-05-06T01:52:06Z",
+        "sha": "f727942ac3c3443f4ddec9b96c3ec99eebd4d70d"
       },
       {
-        "message": "fix: hero size + car stretch + bouncing scroll-down arrow",
-        "date": "2026-05-05T01:00:51Z",
-        "sha": "c662392f67e72c3db7a876effaefe8b767386890"
+        "message": "fit pricing calculators in one viewport on desktop",
+        "date": "2026-05-06T01:42:46Z",
+        "sha": "ed2f49a82e1a8cf308eaf38af4783879a830f7f8"
       },
       {
-        "message": "fix: hero full-width align with header + V2 HowItWorks + picker polish",
-        "date": "2026-05-05T00:55:19Z",
-        "sha": "a26b3f4f2b38d4f344f9d929ac087e2380d171fe"
+        "message": "feat(pricing): make → model → year wizard + new car photos",
+        "date": "2026-05-06T01:11:29Z",
+        "sha": "181d0a2caf5d6676d663be52c3af6ef2110454a5"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-05T09:03:36.988Z",
+    "updatedAt": "2026-05-06T09:14:48.406Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-05T09:03:37.029Z",
+    "updatedAt": "2026-05-06T09:14:48.404Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
