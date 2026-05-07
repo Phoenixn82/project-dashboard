@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-06T09:14:48.369Z",
+    "updatedAt": "2026-05-07T09:25:16.661Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-06T09:14:48.470Z",
+    "updatedAt": "2026-05-07T09:25:16.647Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-06T09:14:48.393Z",
+    "updatedAt": "2026-05-07T09:25:16.664Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "Wire Lexus RX 400h/450h side-profile photo",
-      "date": "2026-05-06T04:37:22Z",
-      "sha": "90859238606ffd75bc74290622ab9b715aa8724f"
+      "message": "Real battery photos, uniform 4:3, white-only backgrounds",
+      "date": "2026-05-07T03:18:44Z",
+      "sha": "581107726d9c088f7746015bb8521ad4eebff4ba"
     },
     "recentCommits": [
       {
-        "message": "Wire Lexus RX 400h/450h side-profile photo",
-        "date": "2026-05-06T04:37:22Z",
-        "sha": "90859238606ffd75bc74290622ab9b715aa8724f"
+        "message": "Real battery photos, uniform 4:3, white-only backgrounds",
+        "date": "2026-05-07T03:18:44Z",
+        "sha": "581107726d9c088f7746015bb8521ad4eebff4ba"
       },
       {
-        "message": "Add Toyota Highlander + Lexus RX 400h/450h to vehicle catalog",
-        "date": "2026-05-06T04:17:51Z",
-        "sha": "80d8430e6e00af583e7b5216920cb6de0c210f0b"
+        "message": "Pricing card cleanup, Texas hover fix, kill Service Areas, ES coverage",
+        "date": "2026-05-07T00:43:59Z",
+        "sha": "74bde62c0ba306cffe15953bc6220bf67d53c351"
       },
       {
-        "message": "redesign /pricing to match design template + scale homepage selector to 80%",
-        "date": "2026-05-06T01:52:06Z",
-        "sha": "f727942ac3c3443f4ddec9b96c3ec99eebd4d70d"
+        "message": "Real Texas outline from Census TIGER data",
+        "date": "2026-05-06T23:33:01Z",
+        "sha": "a44bceec1038e54ef5cdda4e58ce012c972a8b4e"
       },
       {
-        "message": "fit pricing calculators in one viewport on desktop",
-        "date": "2026-05-06T01:42:46Z",
-        "sha": "ed2f49a82e1a8cf308eaf38af4783879a830f7f8"
+        "message": "Battery photo per vehicle in the price card",
+        "date": "2026-05-06T23:28:10Z",
+        "sha": "d2f54e84ff39a482584a2b4fa267ab3b27a5d381"
       },
       {
-        "message": "feat(pricing): make → model → year wizard + new car photos",
-        "date": "2026-05-06T01:11:29Z",
-        "sha": "181d0a2caf5d6676d663be52c3af6ef2110454a5"
+        "message": "Texas outline that actually looks like Texas",
+        "date": "2026-05-06T22:53:04Z",
+        "sha": "b955483a8ef751cdb578a6cdca34b21e4a0de7d8"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-06T09:14:48.406Z",
+    "updatedAt": "2026-05-07T09:25:16.704Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-06T09:14:48.404Z",
+    "updatedAt": "2026-05-07T09:25:16.697Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
