@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-18T10:56:04.900Z",
+    "updatedAt": "2026-05-19T10:31:04.147Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -65,40 +65,40 @@
     ],
     "type": "desktop-app",
     "lastCommit": {
-      "message": "Fix close button description in README",
-      "date": "2026-05-18T03:28:11Z",
-      "sha": "8112a2dd730d85e94326e5fb662ec46598bcd351"
+      "message": "Merge branch 'main' of https://github.com/SlavomirDurej/claude-usage-widget",
+      "date": "2026-05-18T14:57:54Z",
+      "sha": "1a51406354a6c1a100766f1539d55dae0905623a"
     },
     "recentCommits": [
       {
-        "message": "Fix close button description in README",
-        "date": "2026-05-18T03:28:11Z",
-        "sha": "8112a2dd730d85e94326e5fb662ec46598bcd351"
+        "message": "Merge branch 'main' of https://github.com/SlavomirDurej/claude-usage-widget",
+        "date": "2026-05-18T14:57:54Z",
+        "sha": "1a51406354a6c1a100766f1539d55dae0905623a"
       },
       {
-        "message": "fix: graph button visibility in compact mode",
-        "date": "2026-05-01T14:05:08Z",
-        "sha": "fb4c59625e7137254212319ca3cdbc3e546a095b"
+        "message": "Release v1.7.4",
+        "date": "2026-05-18T14:57:44Z",
+        "sha": "c1106f9801ead59be5e40f934d3d2375fc7c1f9c"
       },
       {
-        "message": "docs: sync consolidated release notes from develop",
-        "date": "2026-05-01T00:49:40Z",
-        "sha": "488b64887662d09ae3246028985b6b31bb9b4e6f"
+        "message": "chore: bump version to 1.7.4",
+        "date": "2026-05-18T14:57:36Z",
+        "sha": "098b563ef5738046ea9a5e15a5bcc764cd7a8290"
       },
       {
-        "message": "docs: consolidate 1.7.x release notes into rolling file",
-        "date": "2026-05-01T00:46:12Z",
-        "sha": "1b661d7f07b5da70085479fc62280b36a51f11ca"
+        "message": "fix: add compact-mode body class for CSS styling",
+        "date": "2026-05-18T14:52:10Z",
+        "sha": "1eae7c22c924420dcb22eaf1ce1209bf5c0424b5"
       },
       {
-        "message": "fix: expand panel immediate polling + preserve data",
-        "date": "2026-05-01T00:26:52Z",
-        "sha": "af606a96674e55125fb810dcb83972637b43c660"
+        "message": "fix: reduce title font size in compact mode",
+        "date": "2026-05-18T14:46:03Z",
+        "sha": "1a4a97bc8694f1110e051082da1916774647d595"
       }
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-18T10:56:04.902Z",
+    "updatedAt": "2026-05-19T10:31:04.205Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-18T10:56:04.941Z",
+    "updatedAt": "2026-05-19T10:31:04.176Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-18T10:56:05.071Z",
+    "updatedAt": "2026-05-19T10:31:04.237Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-18T10:56:04.970Z",
+    "updatedAt": "2026-05-19T10:31:04.190Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
