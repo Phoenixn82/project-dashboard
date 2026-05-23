@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-22T10:14:34.317Z",
+    "updatedAt": "2026-05-23T08:56:32.541Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -65,11 +65,26 @@
     ],
     "type": "desktop-app",
     "lastCommit": {
-      "message": "Merge branch 'main' of https://github.com/SlavomirDurej/claude-usage-widget",
-      "date": "2026-05-18T14:57:54Z",
-      "sha": "1a51406354a6c1a100766f1539d55dae0905623a"
+      "message": "Fix README feature list formatting",
+      "date": "2026-05-22T16:46:01Z",
+      "sha": "714caf6f0f20a7cc7dc62ddd04165c795c837b8f"
     },
     "recentCommits": [
+      {
+        "message": "Fix README feature list formatting",
+        "date": "2026-05-22T16:46:01Z",
+        "sha": "714caf6f0f20a7cc7dc62ddd04165c795c837b8f"
+      },
+      {
+        "message": "Add license section to README",
+        "date": "2026-05-22T14:37:24Z",
+        "sha": "a2ae938ff61ae5af8163417b6a721c73028aa58f"
+      },
+      {
+        "message": "Add MIT License",
+        "date": "2026-05-22T14:37:08Z",
+        "sha": "f03aaebe88b24a9846b3dcc59bec81d3b892b63d"
+      },
       {
         "message": "Merge branch 'main' of https://github.com/SlavomirDurej/claude-usage-widget",
         "date": "2026-05-18T14:57:54Z",
@@ -79,26 +94,11 @@
         "message": "Release v1.7.4",
         "date": "2026-05-18T14:57:44Z",
         "sha": "c1106f9801ead59be5e40f934d3d2375fc7c1f9c"
-      },
-      {
-        "message": "chore: bump version to 1.7.4",
-        "date": "2026-05-18T14:57:36Z",
-        "sha": "098b563ef5738046ea9a5e15a5bcc764cd7a8290"
-      },
-      {
-        "message": "fix: add compact-mode body class for CSS styling",
-        "date": "2026-05-18T14:52:10Z",
-        "sha": "1eae7c22c924420dcb22eaf1ce1209bf5c0424b5"
-      },
-      {
-        "message": "fix: reduce title font size in compact mode",
-        "date": "2026-05-18T14:46:03Z",
-        "sha": "1a4a97bc8694f1110e051082da1916774647d595"
       }
     ],
-    "openIssues": 1,
+    "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-22T10:14:34.300Z",
+    "updatedAt": "2026-05-23T08:56:32.489Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-22T10:14:34.337Z",
+    "updatedAt": "2026-05-23T08:56:32.580Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-22T10:14:34.323Z",
+    "updatedAt": "2026-05-23T08:56:32.548Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-22T10:14:34.344Z",
+    "updatedAt": "2026-05-23T08:56:32.554Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
