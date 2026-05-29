@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-28T10:43:31.258Z",
+    "updatedAt": "2026-05-29T10:37:17.369Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -96,9 +96,9 @@
         "sha": "c1106f9801ead59be5e40f934d3d2375fc7c1f9c"
       }
     ],
-    "openIssues": 1,
+    "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-28T10:43:31.171Z",
+    "updatedAt": "2026-05-29T10:37:17.301Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-28T10:43:31.201Z",
+    "updatedAt": "2026-05-29T10:37:17.332Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-28T10:43:31.225Z",
+    "updatedAt": "2026-05-29T10:37:17.402Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-28T10:43:31.240Z",
+    "updatedAt": "2026-05-29T10:37:17.418Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
