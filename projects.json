@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-05-30T09:08:06.624Z",
+    "updatedAt": "2026-05-31T09:41:22.040Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 3,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-05-30T09:08:06.531Z",
+    "updatedAt": "2026-05-31T09:41:22.043Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-05-30T09:08:06.591Z",
+    "updatedAt": "2026-05-31T09:41:22.046Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "pricing/sell/blog/nav review round: text, colors, addresses, appointment strip",
-      "date": "2026-05-17T01:07:02Z",
-      "sha": "2c4a7b8d3d97444dddfbb5cba54988aad4f4a159"
+      "message": "Hide the text-us chat widget on mobile (desktop only)",
+      "date": "2026-05-31T01:46:51Z",
+      "sha": "4827336a6a36034e0b37385abb0ba19765d7e5b6"
     },
     "recentCommits": [
       {
-        "message": "pricing/sell/blog/nav review round: text, colors, addresses, appointment strip",
-        "date": "2026-05-17T01:07:02Z",
-        "sha": "2c4a7b8d3d97444dddfbb5cba54988aad4f4a159"
+        "message": "Hide the text-us chat widget on mobile (desktop only)",
+        "date": "2026-05-31T01:46:51Z",
+        "sha": "4827336a6a36034e0b37385abb0ba19765d7e5b6"
       },
       {
-        "message": "restructure: delete hybrid-battery page, move its hero to /pricing",
-        "date": "2026-05-17T00:20:04Z",
-        "sha": "855d94cb59c7bb42058c19ce888cb86bffe8c274"
+        "message": "Header: use horizontal brand logo in nav; enlarge clear-vehicle (X) hit area",
+        "date": "2026-05-31T01:46:51Z",
+        "sha": "f2ecd107ee3943aba57d3f9b43edb06b7d0fde2b"
       },
       {
-        "message": "remove Most Popular price anchor strip below pricing hero",
-        "date": "2026-05-17T00:00:25Z",
-        "sha": "bbecc7b9a02357abd829a31d37480fc360e7f569"
+        "message": "Integrate owner-supplied car/battery photos",
+        "date": "2026-05-31T01:44:36Z",
+        "sha": "43156441dabfc06fecf95829e056eb42399f1a08"
       },
       {
-        "message": "content: replace Hybrid Battery Fan Failure card with Engine Failed to Start (P3190/P0A0F)",
-        "date": "2026-05-16T23:44:46Z",
-        "sha": "af65d745625450f364d021aa6ee9824cae13aa8a"
+        "message": "Round 2 feedback: flip 3 more cars, drop contact hero reminder, hybrid-only steps",
+        "date": "2026-05-31T00:36:03Z",
+        "sha": "38acf4ff1ff8502969f98de093c3ff8c2d27f228"
       },
       {
-        "message": "content: rewrite inverter (P0A93/P0A94) problem description",
-        "date": "2026-05-16T23:39:22Z",
-        "sha": "792bd533d1acb9963486be980ccf51dd3e6c3cda"
+        "message": "Swap brand greens to legacy hometownhybrids.com palette (revertable)",
+        "date": "2026-05-31T00:00:27Z",
+        "sha": "5d9682480968330eafd1fb5e367d02cf18eaaee1"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-05-30T09:08:06.600Z",
+    "updatedAt": "2026-05-31T09:41:22.059Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-05-30T09:08:06.593Z",
+    "updatedAt": "2026-05-31T09:41:22.036Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
