@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-01T12:28:10.663Z",
+    "updatedAt": "2026-06-02T11:11:03.802Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 4,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-01T12:28:10.624Z",
+    "updatedAt": "2026-06-02T11:11:03.765Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-01T12:28:10.653Z",
+    "updatedAt": "2026-06-02T11:11:03.814Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,11 +169,21 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "Hide the text-us chat widget on mobile (desktop only)",
-      "date": "2026-05-31T01:46:51Z",
-      "sha": "4827336a6a36034e0b37385abb0ba19765d7e5b6"
+      "message": "Add local Forbes article mirror at /forbes; repoint Forbes buttons",
+      "date": "2026-06-02T00:49:05Z",
+      "sha": "ce91f1fa54c13beda42c672e9f00811e6e8353cc"
     },
     "recentCommits": [
+      {
+        "message": "Add local Forbes article mirror at /forbes; repoint Forbes buttons",
+        "date": "2026-06-02T00:49:05Z",
+        "sha": "ce91f1fa54c13beda42c672e9f00811e6e8353cc"
+      },
+      {
+        "message": "docs: add owner-feedback round handoff (both feedback rounds, open items)",
+        "date": "2026-06-01T23:32:25Z",
+        "sha": "c3ef5031ed7a895eb2ce67a3cdc9a4b1a8846ff1"
+      },
       {
         "message": "Hide the text-us chat widget on mobile (desktop only)",
         "date": "2026-05-31T01:46:51Z",
@@ -188,21 +198,11 @@
         "message": "Integrate owner-supplied car/battery photos",
         "date": "2026-05-31T01:44:36Z",
         "sha": "43156441dabfc06fecf95829e056eb42399f1a08"
-      },
-      {
-        "message": "Round 2 feedback: flip 3 more cars, drop contact hero reminder, hybrid-only steps",
-        "date": "2026-05-31T00:36:03Z",
-        "sha": "38acf4ff1ff8502969f98de093c3ff8c2d27f228"
-      },
-      {
-        "message": "Swap brand greens to legacy hometownhybrids.com palette (revertable)",
-        "date": "2026-05-31T00:00:27Z",
-        "sha": "5d9682480968330eafd1fb5e367d02cf18eaaee1"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-01T12:28:10.661Z",
+    "updatedAt": "2026-06-02T11:11:03.873Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-01T12:28:10.650Z",
+    "updatedAt": "2026-06-02T11:11:03.853Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
