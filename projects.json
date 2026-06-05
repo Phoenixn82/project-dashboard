@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-04T10:32:32.794Z",
+    "updatedAt": "2026-06-05T10:39:40.322Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-04T10:32:32.796Z",
+    "updatedAt": "2026-06-05T10:39:40.250Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-04T10:32:32.762Z",
+    "updatedAt": "2026-06-05T10:39:40.307Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "Add local Forbes article mirror at /forbes; repoint Forbes buttons",
-      "date": "2026-06-02T00:49:05Z",
-      "sha": "ce91f1fa54c13beda42c672e9f00811e6e8353cc"
+      "message": "City pages now serve the homepage with a city hero (replaces the custom layout)",
+      "date": "2026-06-04T21:27:41Z",
+      "sha": "53d366aaaa12b6c0cf0594727caf135539fea487"
     },
     "recentCommits": [
       {
-        "message": "Add local Forbes article mirror at /forbes; repoint Forbes buttons",
-        "date": "2026-06-02T00:49:05Z",
-        "sha": "ce91f1fa54c13beda42c672e9f00811e6e8353cc"
+        "message": "City pages now serve the homepage with a city hero (replaces the custom layout)",
+        "date": "2026-06-04T21:27:41Z",
+        "sha": "53d366aaaa12b6c0cf0594727caf135539fea487"
       },
       {
-        "message": "docs: add owner-feedback round handoff (both feedback rounds, open items)",
-        "date": "2026-06-01T23:32:25Z",
-        "sha": "c3ef5031ed7a895eb2ce67a3cdc9a4b1a8846ff1"
+        "message": "Hide city service-area pages from site nav (kept as sitemap/search-only)",
+        "date": "2026-06-04T21:07:51Z",
+        "sha": "ea221af073aedde72fa39469c2fee9b3a3e21d7d"
       },
       {
-        "message": "Hide the text-us chat widget on mobile (desktop only)",
-        "date": "2026-05-31T01:46:51Z",
-        "sha": "4827336a6a36034e0b37385abb0ba19765d7e5b6"
+        "message": "docs: SEO migration session handoff (redirects, schema, per-vehicle + city pages)",
+        "date": "2026-06-04T20:32:32Z",
+        "sha": "e0f04b72dc82a1d4b94484dab744dab4af1128a4"
       },
       {
-        "message": "Header: use horizontal brand logo in nav; enlarge clear-vehicle (X) hit area",
-        "date": "2026-05-31T01:46:51Z",
-        "sha": "f2ecd107ee3943aba57d3f9b43edb06b7d0fde2b"
+        "message": "Add local-SEO city pages for the 4 service areas (Houston, Dallas-Fort Worth, Austin, San Antonio)",
+        "date": "2026-06-04T20:30:41Z",
+        "sha": "7cc5c900d18590e1bbeb1889dbbe7702ff91fff6"
       },
       {
-        "message": "Integrate owner-supplied car/battery photos",
-        "date": "2026-05-31T01:44:36Z",
-        "sha": "43156441dabfc06fecf95829e056eb42399f1a08"
+        "message": "SEO-safe WP->Vercel migration: redirects, NAP, canonical, schema, llms.txt, seamless per-vehicle URLs",
+        "date": "2026-06-04T20:09:36Z",
+        "sha": "67c047c4b7f6fe8f43d36ff5aeefbba50abdac4b"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-04T10:32:32.818Z",
+    "updatedAt": "2026-06-05T10:39:40.400Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-04T10:32:32.819Z",
+    "updatedAt": "2026-06-05T10:39:40.348Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
