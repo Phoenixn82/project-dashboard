@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-05T10:39:40.322Z",
+    "updatedAt": "2026-06-06T09:16:58.474Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -65,40 +65,40 @@
     ],
     "type": "desktop-app",
     "lastCommit": {
-      "message": "Fix README feature list formatting",
-      "date": "2026-05-22T16:46:01Z",
-      "sha": "714caf6f0f20a7cc7dc62ddd04165c795c837b8f"
+      "message": "Delete CHANGELOG.md",
+      "date": "2026-06-05T21:57:54Z",
+      "sha": "fafc52d66fde50d71d3825e5d574862befaf4edd"
     },
     "recentCommits": [
+      {
+        "message": "Delete CHANGELOG.md",
+        "date": "2026-06-05T21:57:54Z",
+        "sha": "fafc52d66fde50d71d3825e5d574862befaf4edd"
+      },
+      {
+        "message": "Delete homebrew-formula.rb",
+        "date": "2026-06-05T21:57:15Z",
+        "sha": "bf4ea43a8ee13a13f8e88f6bdf57894f4f345e7f"
+      },
+      {
+        "message": "Delete HOMEBREW_SUBMISSION.md",
+        "date": "2026-06-05T21:57:00Z",
+        "sha": "9c9e444d9fd4d6b70da118b6ab212c8c8643b3c7"
+      },
+      {
+        "message": "Delete TODO_README_ROADMAP.md",
+        "date": "2026-06-05T21:55:32Z",
+        "sha": "93344740dbac611a8b10413f2b576403650ff87f"
+      },
       {
         "message": "Fix README feature list formatting",
         "date": "2026-05-22T16:46:01Z",
         "sha": "714caf6f0f20a7cc7dc62ddd04165c795c837b8f"
-      },
-      {
-        "message": "Add license section to README",
-        "date": "2026-05-22T14:37:24Z",
-        "sha": "a2ae938ff61ae5af8163417b6a721c73028aa58f"
-      },
-      {
-        "message": "Add MIT License",
-        "date": "2026-05-22T14:37:08Z",
-        "sha": "f03aaebe88b24a9846b3dcc59bec81d3b892b63d"
-      },
-      {
-        "message": "Merge branch 'main' of https://github.com/SlavomirDurej/claude-usage-widget",
-        "date": "2026-05-18T14:57:54Z",
-        "sha": "1a51406354a6c1a100766f1539d55dae0905623a"
-      },
-      {
-        "message": "Release v1.7.4",
-        "date": "2026-05-18T14:57:44Z",
-        "sha": "c1106f9801ead59be5e40f934d3d2375fc7c1f9c"
       }
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-05T10:39:40.250Z",
+    "updatedAt": "2026-06-06T09:16:58.546Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-05T10:39:40.307Z",
+    "updatedAt": "2026-06-06T09:16:58.486Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -202,7 +202,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-05T10:39:40.400Z",
+    "updatedAt": "2026-06-06T09:16:58.526Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-05T10:39:40.348Z",
+    "updatedAt": "2026-06-06T09:16:58.540Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
