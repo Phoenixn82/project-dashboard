@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-06T09:16:58.474Z",
+    "updatedAt": "2026-06-07T09:54:49.482Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-06T09:16:58.546Z",
+    "updatedAt": "2026-06-07T09:54:49.465Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-06T09:16:58.486Z",
+    "updatedAt": "2026-06-07T09:54:49.464Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,11 +169,16 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "City pages now serve the homepage with a city hero (replaces the custom layout)",
-      "date": "2026-06-04T21:27:41Z",
-      "sha": "53d366aaaa12b6c0cf0594727caf135539fea487"
+      "message": "feat(leads): sell-only SMS to personal cell; sweep /blog/page redirects",
+      "date": "2026-06-06T23:42:23Z",
+      "sha": "61970cfb6a03f3f88629912385511a361d1122e8"
     },
     "recentCommits": [
+      {
+        "message": "feat(leads): sell-only SMS to personal cell; sweep /blog/page redirects",
+        "date": "2026-06-06T23:42:23Z",
+        "sha": "61970cfb6a03f3f88629912385511a361d1122e8"
+      },
       {
         "message": "City pages now serve the homepage with a city hero (replaces the custom layout)",
         "date": "2026-06-04T21:27:41Z",
@@ -193,16 +198,11 @@
         "message": "Add local-SEO city pages for the 4 service areas (Houston, Dallas-Fort Worth, Austin, San Antonio)",
         "date": "2026-06-04T20:30:41Z",
         "sha": "7cc5c900d18590e1bbeb1889dbbe7702ff91fff6"
-      },
-      {
-        "message": "SEO-safe WP->Vercel migration: redirects, NAP, canonical, schema, llms.txt, seamless per-vehicle URLs",
-        "date": "2026-06-04T20:09:36Z",
-        "sha": "67c047c4b7f6fe8f43d36ff5aeefbba50abdac4b"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-06T09:16:58.526Z",
+    "updatedAt": "2026-06-07T09:54:49.468Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-06T09:16:58.540Z",
+    "updatedAt": "2026-06-07T09:54:49.491Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
