@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-07T09:54:49.482Z",
+    "updatedAt": "2026-06-08T11:48:10.678Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -96,9 +96,9 @@
         "sha": "714caf6f0f20a7cc7dc62ddd04165c795c837b8f"
       }
     ],
-    "openIssues": 0,
+    "openIssues": 2,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-07T09:54:49.465Z",
+    "updatedAt": "2026-06-08T11:48:10.651Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-07T09:54:49.464Z",
+    "updatedAt": "2026-06-08T11:48:10.677Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "feat(leads): sell-only SMS to personal cell; sweep /blog/page redirects",
-      "date": "2026-06-06T23:42:23Z",
-      "sha": "61970cfb6a03f3f88629912385511a361d1122e8"
+      "message": "chore(leads): remove temporary SMS debug instrumentation",
+      "date": "2026-06-08T03:57:00Z",
+      "sha": "0cd442ceb51235a42e250faffe8a53568a4ec4fe"
     },
     "recentCommits": [
       {
-        "message": "feat(leads): sell-only SMS to personal cell; sweep /blog/page redirects",
-        "date": "2026-06-06T23:42:23Z",
-        "sha": "61970cfb6a03f3f88629912385511a361d1122e8"
+        "message": "chore(leads): remove temporary SMS debug instrumentation",
+        "date": "2026-06-08T03:57:00Z",
+        "sha": "0cd442ceb51235a42e250faffe8a53568a4ec4fe"
       },
       {
-        "message": "City pages now serve the homepage with a city hero (replaces the custom layout)",
-        "date": "2026-06-04T21:27:41Z",
-        "sha": "53d366aaaa12b6c0cf0594727caf135539fea487"
+        "message": "debug(leads): surface computed SMS recipients + env pools (temporary)",
+        "date": "2026-06-07T23:13:40Z",
+        "sha": "4e7a05e4a47f5bfa8d186f1a08eb89925d4e0413"
       },
       {
-        "message": "Hide city service-area pages from site nav (kept as sitemap/search-only)",
-        "date": "2026-06-04T21:07:51Z",
-        "sha": "ea221af073aedde72fa39469c2fee9b3a3e21d7d"
+        "message": "debug(leads): temporarily surface SMS send result in /api/lead response",
+        "date": "2026-06-07T23:09:59Z",
+        "sha": "44b5df115003f622f34da0d1f18cd3427ee3b6ae"
       },
       {
-        "message": "docs: SEO migration session handoff (redirects, schema, per-vehicle + city pages)",
-        "date": "2026-06-04T20:32:32Z",
-        "sha": "e0f04b72dc82a1d4b94484dab744dab4af1128a4"
+        "message": "fix(leads): send TextP2P texts sequentially with a gap (concurrent sends got dropped)",
+        "date": "2026-06-07T23:05:49Z",
+        "sha": "2c7973090cf76ab5067168c14ca4abf3b6dda86e"
       },
       {
-        "message": "Add local-SEO city pages for the 4 service areas (Houston, Dallas-Fort Worth, Austin, San Antonio)",
-        "date": "2026-06-04T20:30:41Z",
-        "sha": "7cc5c900d18590e1bbeb1889dbbe7702ff91fff6"
+        "message": "fix(leads): send each TextP2P SMS recipient as its own call",
+        "date": "2026-06-07T22:55:03Z",
+        "sha": "9a5a2b669e72edda2fdf3ca56c331ae1dc95e6ba"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-07T09:54:49.468Z",
+    "updatedAt": "2026-06-08T11:48:10.682Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-07T09:54:49.491Z",
+    "updatedAt": "2026-06-08T11:48:10.723Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
