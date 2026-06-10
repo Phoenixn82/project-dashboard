@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-09T10:26:40.600Z",
+    "updatedAt": "2026-06-10T10:47:18.417Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-09T10:26:40.772Z",
+    "updatedAt": "2026-06-10T10:47:18.455Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-09T10:26:40.619Z",
+    "updatedAt": "2026-06-10T10:47:18.382Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "chore(leads): remove temporary SMS debug instrumentation",
-      "date": "2026-06-08T03:57:00Z",
-      "sha": "0cd442ceb51235a42e250faffe8a53568a4ec4fe"
+      "message": "fix(seo): redirect old /sitemap_index.xml to /sitemap.xml",
+      "date": "2026-06-10T04:56:22Z",
+      "sha": "c9368d40b6bb08a1cb52b2dc46f831234e308fc0"
     },
     "recentCommits": [
       {
-        "message": "chore(leads): remove temporary SMS debug instrumentation",
-        "date": "2026-06-08T03:57:00Z",
-        "sha": "0cd442ceb51235a42e250faffe8a53568a4ec4fe"
+        "message": "fix(seo): redirect old /sitemap_index.xml to /sitemap.xml",
+        "date": "2026-06-10T04:56:22Z",
+        "sha": "c9368d40b6bb08a1cb52b2dc46f831234e308fc0"
       },
       {
-        "message": "debug(leads): surface computed SMS recipients + env pools (temporary)",
-        "date": "2026-06-07T23:13:40Z",
-        "sha": "4e7a05e4a47f5bfa8d186f1a08eb89925d4e0413"
+        "message": "fix(press): pull logo columns toward the centerline (tight uniform gutter, still 2x2)",
+        "date": "2026-06-10T04:40:06Z",
+        "sha": "b2c5786211216a1141bdc4f4d93f17776c5c5125"
       },
       {
-        "message": "debug(leads): temporarily surface SMS send result in /api/lead response",
-        "date": "2026-06-07T23:09:59Z",
-        "sha": "44b5df115003f622f34da0d1f18cd3427ee3b6ae"
+        "message": "revert(press): back to plain 2x2 logo grid on phones (no stagger)",
+        "date": "2026-06-10T04:15:48Z",
+        "sha": "bfdfc4ea90fc71c2fe02244e3063c3dd87b3925d"
       },
       {
-        "message": "fix(leads): send TextP2P texts sequentially with a gap (concurrent sends got dropped)",
-        "date": "2026-06-07T23:05:49Z",
-        "sha": "2c7973090cf76ab5067168c14ca4abf3b6dda86e"
+        "message": "fix(i18n+ui): localize all hardcoded chrome strings; stick trust tab to nav; symmetric press rules",
+        "date": "2026-06-10T04:04:13Z",
+        "sha": "6617ec28804b15b3c105fc3bdd01f0b6c8b4935e"
       },
       {
-        "message": "fix(leads): send each TextP2P SMS recipient as its own call",
-        "date": "2026-06-07T22:55:03Z",
-        "sha": "9a5a2b669e72edda2fdf3ca56c331ae1dc95e6ba"
+        "message": "feat(hero): phone-only alternating trust tab under the nav right corner",
+        "date": "2026-06-10T03:49:53Z",
+        "sha": "b4c34c48ef875d8b284f2d8e2322586c6eeadd0c"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-09T10:26:40.649Z",
+    "updatedAt": "2026-06-10T10:47:18.447Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-09T10:26:40.674Z",
+    "updatedAt": "2026-06-10T10:47:18.434Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
