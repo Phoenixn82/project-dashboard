@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-10T10:47:18.417Z",
+    "updatedAt": "2026-06-11T11:16:40.454Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -65,40 +65,40 @@
     ],
     "type": "desktop-app",
     "lastCommit": {
-      "message": "Delete CHANGELOG.md",
-      "date": "2026-06-05T21:57:54Z",
-      "sha": "fafc52d66fde50d71d3825e5d574862befaf4edd"
+      "message": "release: merge develop into main for v1.7.5",
+      "date": "2026-06-10T17:59:27Z",
+      "sha": "6d8c6420ca53596a76c29b66eb1d879496a30ce8"
     },
     "recentCommits": [
       {
-        "message": "Delete CHANGELOG.md",
-        "date": "2026-06-05T21:57:54Z",
-        "sha": "fafc52d66fde50d71d3825e5d574862befaf4edd"
+        "message": "release: merge develop into main for v1.7.5",
+        "date": "2026-06-10T17:59:27Z",
+        "sha": "6d8c6420ca53596a76c29b66eb1d879496a30ce8"
       },
       {
-        "message": "Delete homebrew-formula.rb",
-        "date": "2026-06-05T21:57:15Z",
-        "sha": "bf4ea43a8ee13a13f8e88f6bdf57894f4f345e7f"
+        "message": "fix: remove UTF-8 BOM from files written by PowerShell Out-File",
+        "date": "2026-06-10T17:59:10Z",
+        "sha": "b99203dc5f0392d91c2bdf8e4d14581a936712c0"
       },
       {
-        "message": "Delete HOMEBREW_SUBMISSION.md",
-        "date": "2026-06-05T21:57:00Z",
-        "sha": "9c9e444d9fd4d6b70da118b6ab212c8c8643b3c7"
+        "message": "release: merge develop into main for v1.7.5",
+        "date": "2026-06-10T17:55:56Z",
+        "sha": "23700eb688a5be6ab9b315362689a4ee6ff3e149"
       },
       {
-        "message": "Delete TODO_README_ROADMAP.md",
-        "date": "2026-06-05T21:55:32Z",
-        "sha": "93344740dbac611a8b10413f2b576403650ff87f"
+        "message": "chore: update STAGED_CHANGES for fix/ci-actions-node20",
+        "date": "2026-06-10T17:55:45Z",
+        "sha": "56e657ba52b38482c88e48d7e64743444a4f833c"
       },
       {
-        "message": "Fix README feature list formatting",
-        "date": "2026-05-22T16:46:01Z",
-        "sha": "714caf6f0f20a7cc7dc62ddd04165c795c837b8f"
+        "message": "fix: bump CI actions to v5 and Node.js matrix to 20",
+        "date": "2026-06-10T17:53:20Z",
+        "sha": "2984c2d3eecfaaa6c9c489692577a0e10b323cc1"
       }
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-10T10:47:18.455Z",
+    "updatedAt": "2026-06-11T11:16:40.372Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-10T10:47:18.382Z",
+    "updatedAt": "2026-06-11T11:16:40.405Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,40 +169,40 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix(seo): redirect old /sitemap_index.xml to /sitemap.xml",
-      "date": "2026-06-10T04:56:22Z",
-      "sha": "c9368d40b6bb08a1cb52b2dc46f831234e308fc0"
+      "message": "fix(selector): scroll after the header identity bar settles so the framing offset is correct",
+      "date": "2026-06-10T17:30:08Z",
+      "sha": "cde9e543df40c21b257b24edbb20f5659a55d599"
     },
     "recentCommits": [
+      {
+        "message": "fix(selector): scroll after the header identity bar settles so the framing offset is correct",
+        "date": "2026-06-10T17:30:08Z",
+        "sha": "cde9e543df40c21b257b24edbb20f5659a55d599"
+      },
+      {
+        "message": "feat(selector): frame the quote section under the sticky nav on every viewport after a pick",
+        "date": "2026-06-10T17:27:25Z",
+        "sha": "3eda3d37cd3ca6a300a63de9f2fac918099811a7"
+      },
+      {
+        "message": "feat(footer): use the nav logo lockup, recolored white+green for the navy background",
+        "date": "2026-06-10T17:23:07Z",
+        "sha": "8c80e81f9396a34eb2eb8141231398172f4db2c1"
+      },
+      {
+        "message": "feat(nav): replace Call/Text CTA with Contact Us link; drop duplicate contact nav link",
+        "date": "2026-06-10T17:20:20Z",
+        "sha": "f54f6cb2dd90734c47a39737856af7177e5d493f"
+      },
       {
         "message": "fix(seo): redirect old /sitemap_index.xml to /sitemap.xml",
         "date": "2026-06-10T04:56:22Z",
         "sha": "c9368d40b6bb08a1cb52b2dc46f831234e308fc0"
-      },
-      {
-        "message": "fix(press): pull logo columns toward the centerline (tight uniform gutter, still 2x2)",
-        "date": "2026-06-10T04:40:06Z",
-        "sha": "b2c5786211216a1141bdc4f4d93f17776c5c5125"
-      },
-      {
-        "message": "revert(press): back to plain 2x2 logo grid on phones (no stagger)",
-        "date": "2026-06-10T04:15:48Z",
-        "sha": "bfdfc4ea90fc71c2fe02244e3063c3dd87b3925d"
-      },
-      {
-        "message": "fix(i18n+ui): localize all hardcoded chrome strings; stick trust tab to nav; symmetric press rules",
-        "date": "2026-06-10T04:04:13Z",
-        "sha": "6617ec28804b15b3c105fc3bdd01f0b6c8b4935e"
-      },
-      {
-        "message": "feat(hero): phone-only alternating trust tab under the nav right corner",
-        "date": "2026-06-10T03:49:53Z",
-        "sha": "b4c34c48ef875d8b284f2d8e2322586c6eeadd0c"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-10T10:47:18.447Z",
+    "updatedAt": "2026-06-11T11:16:40.442Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-10T10:47:18.434Z",
+    "updatedAt": "2026-06-11T11:16:40.434Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
