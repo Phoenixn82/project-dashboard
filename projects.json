@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-11T11:16:40.454Z",
+    "updatedAt": "2026-06-12T10:55:57.214Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-11T11:16:40.372Z",
+    "updatedAt": "2026-06-12T10:55:57.188Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-11T11:16:40.405Z",
+    "updatedAt": "2026-06-12T10:55:57.203Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,11 +169,16 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix(selector): scroll after the header identity bar settles so the framing offset is correct",
-      "date": "2026-06-10T17:30:08Z",
-      "sha": "cde9e543df40c21b257b24edbb20f5659a55d599"
+      "message": "fix(ui): mobile polish batch + $3,200 new-OEM sale",
+      "date": "2026-06-11T18:40:59Z",
+      "sha": "384dc98b3c4ea0bba6333a9943af404a7c984a44"
     },
     "recentCommits": [
+      {
+        "message": "fix(ui): mobile polish batch + $3,200 new-OEM sale",
+        "date": "2026-06-11T18:40:59Z",
+        "sha": "384dc98b3c4ea0bba6333a9943af404a7c984a44"
+      },
       {
         "message": "fix(selector): scroll after the header identity bar settles so the framing offset is correct",
         "date": "2026-06-10T17:30:08Z",
@@ -193,16 +198,11 @@
         "message": "feat(nav): replace Call/Text CTA with Contact Us link; drop duplicate contact nav link",
         "date": "2026-06-10T17:20:20Z",
         "sha": "f54f6cb2dd90734c47a39737856af7177e5d493f"
-      },
-      {
-        "message": "fix(seo): redirect old /sitemap_index.xml to /sitemap.xml",
-        "date": "2026-06-10T04:56:22Z",
-        "sha": "c9368d40b6bb08a1cb52b2dc46f831234e308fc0"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-11T11:16:40.442Z",
+    "updatedAt": "2026-06-12T10:55:57.260Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -255,7 +255,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-11T11:16:40.434Z",
+    "updatedAt": "2026-06-12T10:55:57.215Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
