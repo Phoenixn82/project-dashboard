@@ -46,7 +46,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "ATLAS — Web Design & SEO Agency Website",
-    "updatedAt": "2026-06-12T10:55:57.214Z",
+    "updatedAt": "2026-06-13T09:49:46.596Z",
     "launchCommand": "npm run dev -- -p 3001",
     "visibility": "public",
     "fetchError": null
@@ -98,7 +98,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Claude usage widget for Windows",
-    "updatedAt": "2026-06-12T10:55:57.188Z",
+    "updatedAt": "2026-06-13T09:49:46.540Z",
     "launchCommand": "npm start",
     "visibility": "public",
     "fetchError": null
@@ -150,7 +150,7 @@
     ],
     "openIssues": 0,
     "repoDescription": "Facebook Marketplace car scraper with negotiation bot, VIN decoder, and React dashboard",
-    "updatedAt": "2026-06-12T10:55:57.203Z",
+    "updatedAt": "2026-06-13T09:49:46.630Z",
     "launchCommand": "start.bat",
     "fetchError": null,
     "visibility": "private"
@@ -169,11 +169,26 @@
     ],
     "type": "web-app",
     "lastCommit": {
-      "message": "fix(ui): mobile polish batch + $3,200 new-OEM sale",
-      "date": "2026-06-11T18:40:59Z",
-      "sha": "384dc98b3c4ea0bba6333a9943af404a7c984a44"
+      "message": "Tune reveal blur and EGR mobile cover (#2)",
+      "date": "2026-06-12T23:43:49Z",
+      "sha": "8639d306c4d4eef8df0ba7a094d1ab4c06ab1c55"
     },
     "recentCommits": [
+      {
+        "message": "Tune reveal blur and EGR mobile cover (#2)",
+        "date": "2026-06-12T23:43:49Z",
+        "sha": "8639d306c4d4eef8df0ba7a094d1ab4c06ab1c55"
+      },
+      {
+        "message": "Fix Forbes mobile article layout",
+        "date": "2026-06-12T22:07:03Z",
+        "sha": "65f8c3898e40392620c443293221d9fe4291a5bd"
+      },
+      {
+        "message": "Add Prius EGR system blog post",
+        "date": "2026-06-12T20:52:46Z",
+        "sha": "e710faccb7db6e8fa922fa5f49fb42fae57a1363"
+      },
       {
         "message": "fix(ui): mobile polish batch + $3,200 new-OEM sale",
         "date": "2026-06-11T18:40:59Z",
@@ -183,26 +198,11 @@
         "message": "fix(selector): scroll after the header identity bar settles so the framing offset is correct",
         "date": "2026-06-10T17:30:08Z",
         "sha": "cde9e543df40c21b257b24edbb20f5659a55d599"
-      },
-      {
-        "message": "feat(selector): frame the quote section under the sticky nav on every viewport after a pick",
-        "date": "2026-06-10T17:27:25Z",
-        "sha": "3eda3d37cd3ca6a300a63de9f2fac918099811a7"
-      },
-      {
-        "message": "feat(footer): use the nav logo lockup, recolored white+green for the navy background",
-        "date": "2026-06-10T17:23:07Z",
-        "sha": "8c80e81f9396a34eb2eb8141231398172f4db2c1"
-      },
-      {
-        "message": "feat(nav): replace Call/Text CTA with Contact Us link; drop duplicate contact nav link",
-        "date": "2026-06-10T17:20:20Z",
-        "sha": "f54f6cb2dd90734c47a39737856af7177e5d493f"
       }
     ],
     "openIssues": 0,
     "repoDescription": "",
-    "updatedAt": "2026-06-12T10:55:57.260Z",
+    "updatedAt": "2026-06-13T09:49:46.704Z",
     "launchCommand": "npm run dev -- -p 3002",
     "fetchError": null,
     "visibility": "private"
@@ -253,9 +253,9 @@
         "sha": "93e73c833bb80d74008ea42343ed37146ed8056a"
       }
     ],
-    "openIssues": 0,
+    "openIssues": 1,
     "repoDescription": "AI-powered job search engine with stealth web scraping, skill-gap analysis, and network intelligence",
-    "updatedAt": "2026-06-12T10:55:57.215Z",
+    "updatedAt": "2026-06-13T09:49:46.644Z",
     "launchCommand": "docker-compose up",
     "fetchError": null,
     "visibility": "private"
